@@ -2,20 +2,9 @@
 
 Source of truth: [src/styles/global.scss](src/styles/global.scss).
 
-The site preserves Self Esteem’s editorial language: warm paper (`#f1eadc`), ink (`#121418`), thin rules (`#a29b8d`), oversized headings, and italic accents. Colour comes from flat, irregularly arranged patches inspired by faded book jackets and cloth. Avoid gradients and shadows.
+The site preserves Self Esteem’s editorial language: warm ivory (`#f2f0eb`), charcoal (`#29262b`), thin rules (`#c9c4c4`), oversized headings, and italic accents. The single colour accent is smoked plum (`#6b5668`), reserved for the surname, small labels, and active navigation. Quiet mauve paper (`#e9e4e7`) and warm stone (`#e7e5e0`) define the writing tiles and a flat backing behind the portraits. Keep portraits monochrome; avoid multicoloured frames, badges, decorative stripes, gradients, and shadows.
 
-## Patchwork palette
-
-| Colour     | Hex       | Placement                                |
-| ---------- | --------- | ---------------------------------------- |
-| Warm paper | `#f1eadc` | Site background                          |
-| Ochre      | `#e3bc64` | Blog, first portrait frame               |
-| Faded rust | `#dba38f` | Third portrait frame                     |
-| Sage       | `#b8c5ad` | About navigation and introduction note   |
-| Dusty blue | `#a6bdcc` | Literature Review, second portrait frame |
-| Rust ink   | `#934430` | Italic surname on the paper background   |
-
-Use dark ink on every pastel patch. Keep the portraits monochrome. The shared four-square mark and footer seam carry the palette across sections without creating extra content. Active navigation keeps its underline as well as its colour.
+Patchwork comes from proportions and alignment: unequal writing tiles, an inset biography, and three unrotated portrait crops with staggered edges and a small overlap. Preserve the text-left / portraits-right structure on desktop and stack on mobile.
 
 ## Typography
 

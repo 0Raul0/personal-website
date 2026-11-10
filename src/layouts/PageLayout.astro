@@ -13,22 +13,13 @@ interface Props {
 }
 
 const { title, description, eyebrow, heroImage, pageTitle, variant = 'default' } = Astro.props;
-const section = Astro.url.pathname.startsWith('/literature-review')
-  ? 'reading'
-  : Astro.url.pathname.startsWith('/blog')
-    ? 'blog'
-    : 'about';
 const headTitle = pageTitle ?? `${title} — Raul Sheth`;
 ---
 
 <BaseLayout title={headTitle} description={description} image={heroImage}>
-  <div class:list={['page', `page--${section}`]}>
+  <div class="page">
     <header class="page-nav">
-      <a class="page-nav__brand" href="/"
-        ><span class="patchwork-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span
-          >Raul <em>Sheth</em></span
-        ></a
-      >
+      <a class="page-nav__brand" href="/">Raul <span>Sheth</span></a>
       <Navigation label="Primary" />
     </header>
 
