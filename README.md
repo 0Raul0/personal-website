@@ -1,95 +1,43 @@
-# Self Esteem (Astro Template)
+# Raul Sheth
 
-![Magazine cover homepage](public/hero.jpeg)
+A personal website built with Astro, retaining the editorial typography, warm paper palette, and fine rules of the Self Esteem template.
 
-[![Live preview](https://img.shields.io/badge/▶_Live_preview-121418?style=for-the-badge&labelColor=121418&color=e9e6e4)](https://miro.build/templates/self-esteem)
+## Development
 
-A magazine-style editorial template built with [Astro](https://astro.build). Original layout by [Aysenur Turk](https://codepen.io/TurkAysenur/pen/gOmMgpx), re-implemented here as a full project.
+Requires Node.js >=22.12.0. Use the existing checkout; cloud tasks are already isolated.
 
-## Quick start
-
-Scaffold a new project from this template:
-
-```bash
-# npm
-npm create astro@latest -- --template m-durana/self-esteem-astro
-
-# pnpm
-pnpm create astro@latest --template m-durana/self-esteem-astro
-
-# yarn
-yarn create astro --template m-durana/self-esteem-astro
-
-# bun
-bun create astro@latest --template m-durana/self-esteem-astro
+```sh
+npm ci
+npm run dev
+npm run format:check
+npm run build
 ```
 
-Or use the "Use template" button in the top right or clone directly:
+In the managed cloud sandbox, use `npm ci --cache /workspace/.npm-cache` and prefix Astro commands with `ASTRO_TELEMETRY_DISABLED=1` to avoid writing to restricted home directories.
 
-```bash
-git clone https://github.com/m-durana/self-esteem-astro.git
-cd self-esteem-astro
-npm install
-```
+The static build is written to `dist/`. The production domain remains `https://raulsheth.com` in `astro.config.mjs`.
 
-Then:
+## Sections and Markdown
 
-```bash
-npm run dev      # http://localhost:4321
-npm run build    # static output to ./dist
-```
+- `/`: About
+- `/blog`: Blog, from `src/content/blog/`
+- `/literature-review`: Literature Review, from `src/content/literature-review/`
 
-## Features
-
-- Full-viewport magazine homepage (`/`)
-- `/blog` index + `/blog/[slug]` MDX post pages with prev/next
-- `/tags/[tag]` pages generated from post frontmatter
-- `/studio`, `/contact`, `/work` (data-driven), `/404`
-- RSS at `/rss.xml`, OG/Twitter meta in `BaseLayout`
-- `PageLayout` + `_template.astro.example` for creating new pages
-
-## Structure
-
-```
-src/
-├── components/      Menu, Footer, FeaturedArticle, Sidebar, Marquee, Circle, StickyHeader
-├── content/         posts/ (md+mdx), featured/, work/
-├── content.config.ts
-├── layouts/         BaseLayout, PageLayout
-├── pages/           index, blog/, tags/, studio, contact, work, 404, rss.xml
-└── styles/global.scss
-```
-
-See [STYLEGUIDE.md](STYLEGUIDE.md) for tokens, type scale, and a guide for staying on-brand.
-
-## Authoring a post
-
-Drop a `.md` or `.mdx` file in `src/content/posts/`:
+Both collections start empty. Their `.gitkeep` files preserve the directories without adding entries. Add a `.md` file to the appropriate directory:
 
 ```md
 ---
-title: 'Your Article Title'
-bigTitle: 'Hero'
-emphasis: 'Word' # optional, italicised inside the headline
-headline: 'Sharing The {emphasis} Acclaim About Motivation'
-excerpt: 'Teaser shown on the cover and in /blog.'
-author: 'Jane Doe'
-date: 2026-01-01
-cover: 'https://images.unsplash.com/...'
-tags: ['attention', 'quiet']
-featured: true # appear on the magazine cover
-pageNumber: 'NO. 01' # optional, used by the sticky header
+title: 'Your title'
+description: 'A short summary for the index and page metadata.'
+date: 2026-11-10
+draft: false
 ---
 
-Long-form body.
+Your Markdown body.
 ```
 
-Sidebar entries (`src/content/featured/`) and portfolio items (`src/content/work/`) use smaller schemas; see `content.config.ts`.
+The filename supplies the article URL, for example `src/content/blog/first-note.md` becomes `/blog/first-note`. Each collection has its own index and article routes. Entries sort by date, newest first; `draft: true` entries appear in neither the index nor the generated article pages. No portfolio, tag, or RSS routes are generated.
 
-## Adding a subpage
+## Credits
 
-Copy `src/pages/_template.astro.example` to `src/pages/<name>.astro`, edit the props, add a link in `src/components/Menu.astro` if it should appear in nav.
-
-## License
-
-MIT License. Original CodePen layout © Aysenur Turk
+Based on [Self Esteem](https://github.com/m-durana/self-esteem-astro), an Astro adaptation of Aysenur Turk’s editorial layout. See `LICENSE` and `STYLEGUIDE.md`.

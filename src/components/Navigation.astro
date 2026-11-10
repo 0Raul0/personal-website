@@ -1,0 +1,26 @@
+---
+interface Props {
+  label: string;
+}
+const { label } = Astro.props;
+const items = [
+  { label: 'About', href: '/' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Literature Review', href: '/literature-review' },
+];
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+
+<nav aria-label={label}>
+  {
+    items.map(({ label, href }) => (
+      <a
+        href={href}
+        aria-current={currentPath === href ? 'page' : undefined}
+        class:list={{ 'is-active': href !== '/' && currentPath.startsWith(`${href}/`) }}
+      >
+        {label}
+      </a>
+    ))
+  }
+</nav>

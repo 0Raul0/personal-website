@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import PageLayout from '../../layouts/PageLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('literatureReview', ({ data }) => !data.draft);
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+interface Props {
+  entry: CollectionEntry<'literatureReview'>;
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const date = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', timeZone: 'UTC' }).format(
+  entry.data.date,
+);
+---
+
+<PageLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  eyebrow="Literature Review"
+>
+  <article>
+    <time class="post-meta" datetime={entry.data.date.toISOString()}>{date}</time>
+    <div class="prose"><Content /></div>
+  </article>
+  <p class="back-link"><a href="/literature-review">← Back to Literature Review</a></p>
+</PageLayout>
