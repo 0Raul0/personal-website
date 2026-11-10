@@ -17,6 +17,10 @@ In the managed cloud sandbox, use `npm ci --cache /workspace/.npm-cache` and pre
 
 The static build is written to `dist/`. The production domain remains `https://raulsheth.com` in `astro.config.mjs`.
 
+## About portraits
+
+The About page uses a text column on the left and three locally served black-and-white portrait placeholders on the right. On small screens the portraits move below the text. These are generated fictional portraits, not photos of Raul. Replace `public/images/about/portrait-01.webp`, `portrait-02.webp`, and `portrait-03.webp` with personal photos, then update the alt text, intrinsic dimensions, and captions in `src/pages/index.astro`. The first image is eager-loaded; the other two are lazy-loaded. Images are compressed WebP assets and require no external image service.
+
 ## Sections and Markdown
 
 - `/`: About

@@ -14,7 +14,7 @@ Page titles use `clamp(40px, 7vw, 88px)`. Prose uses 18px type with 1.65 line he
 
 ## Layout and components
 
-All three sections share [PageLayout](src/layouts/PageLayout.astro), with a top navigation, a maximum 920px main column, and a footer. The About introduction and section links use two columns on larger screens and stack on small screens. Navigation remains visible and wraps on mobile.
+All three sections share [PageLayout](src/layouts/PageLayout.astro), with a top navigation, a maximum 920px main column, and a footer. About uses a wider editorial spread: all copy and writing links sit in the left column, with three grayscale portraits in an asymmetrical arrangement on the right. At 680px and below, the portrait column moves beneath the text. Oversized mixed sans-serif and italic-serif name typography, numbered sections, and fine rules tie it to the original template. Navigation remains visible and wraps on mobile.
 
 - [BaseLayout](src/layouts/BaseLayout.astro): document shell, canonical URL, metadata, and global styles.
 - [Navigation](src/components/Navigation.astro): the three section links, reused in the header and footer.

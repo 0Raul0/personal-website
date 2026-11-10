@@ -9,9 +9,10 @@ interface Props {
   eyebrow?: string;
   heroImage?: string;
   pageTitle?: string;
+  variant?: 'default' | 'about';
 }
 
-const { title, description, eyebrow, heroImage, pageTitle } = Astro.props;
+const { title, description, eyebrow, heroImage, pageTitle, variant = 'default' } = Astro.props;
 const headTitle = pageTitle ?? `${title} — Raul Sheth`;
 ---
 
@@ -22,7 +23,7 @@ const headTitle = pageTitle ?? `${title} — Raul Sheth`;
       <Navigation label="Primary" />
     </header>
 
-    <main class="page-main">
+    <main class:list={['page-main', { 'page-main--about': variant === 'about' }]}>
       {
         heroImage && (
           <div class="page-hero">
@@ -31,11 +32,15 @@ const headTitle = pageTitle ?? `${title} — Raul Sheth`;
         )
       }
 
-      <section class="page-head">
-        {eyebrow && <div class="page-eyebrow">{eyebrow}</div>}
-        <h1 class="page-title">{title}</h1>
-        {description && <p class="page-deck">{description}</p>}
-      </section>
+      {
+        variant !== 'about' && (
+          <section class="page-head">
+            {eyebrow && <div class="page-eyebrow">{eyebrow}</div>}
+            <h1 class="page-title">{title}</h1>
+            {description && <p class="page-deck">{description}</p>}
+          </section>
+        )
+      }
 
       <div class="page-body">
         <slot />
