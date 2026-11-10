@@ -1,45 +1,44 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Menu from '../components/Menu.astro';
-import StickyHeader from '../components/StickyHeader.astro';
-import FeaturedArticle from '../components/FeaturedArticle.astro';
-import Sidebar from '../components/Sidebar.astro';
-
-const posts = await getCollection('posts', ({ data }) => data.featured);
-const featured = await getCollection('featured');
-
-const pinned = posts[0];
-posts.sort((a, b) => +b.data.date - +a.data.date);
+import PageLayout from '../layouts/PageLayout.astro';
 ---
 
-<BaseLayout>
-  <div class="blog">
-    <Menu />
-    <StickyHeader
-      title="Self"
-      pinnedLabel="Pinned Issue"
-      pageNumber={pinned?.data.pageNumber ?? 'NO. 01'}
-    />
-
-    <div class="blog-header-container">
-      {
-        posts.map((post) => (
-          <FeaturedArticle
-            bigTitle={post.data.bigTitle}
-            date={post.data.date}
-            emphasis={post.data.emphasis}
-            headline={post.data.headline}
-            cover={post.data.cover}
-            author={post.data.author}
-            readTime={post.data.readTime}
-            excerpt={post.data.excerpt}
-            href={`/blog/${post.id}`}
-          />
-        ))
-      }
+<PageLayout
+  title="About"
+  eyebrow="01 / An introduction"
+  description="Raul Sheth. A personal space for writing and reading."
+>
+  <div class="about-intro">
+    <p class="about-statement">A place for <em>ideas</em><br />to take shape.</p>
+    <div class="prose">
+      <p>Welcome. I’m Raul Sheth.</p>
+      <p>This is where I’ll share my writing and reflections on what I read.</p>
     </div>
-
-    <Sidebar entries={featured} />
   </div>
-</BaseLayout>
+  <div class="section-links">
+    <a href="/blog">
+      <span class="section-links__number">02 / Writing</span>
+      <h2>
+        Blog <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.25"><path d="M5 19 19 5M5 5h14v14"></path></svg>
+      </h2>
+      <p>Thoughts, notes, and essays.</p>
+    </a>
+    <a href="/literature-review">
+      <span class="section-links__number">03 / Reading</span>
+      <h2>
+        Literature <em>Review</em>
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.25"><path d="M5 19 19 5M5 5h14v14"></path></svg>
+      </h2>
+      <p>Reflections and perspectives on the literature.</p>
+    </a>
+  </div>
+</PageLayout>

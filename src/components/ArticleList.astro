@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  entries: (CollectionEntry<'blog'> | CollectionEntry<'literatureReview'>)[];
+  basePath: string;
+  emptyMessage: string;
+}
+const { entries, basePath, emptyMessage } = Astro.props;
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(date);
+---
+
+{
+  entries.length === 0 ? (
+    <div class="empty-state">
+      <p class="empty-state__title">Nothing published yet.</p>
+      <p>{emptyMessage}</p>
+    </div>
+  ) : (
+    <div class="post-list">
+      {entries.map((entry) => (
+        <article class="post-card">
+          <time class="post-card__meta" datetime={entry.data.date.toISOString()}>
+            {formatDate(entry.data.date)}
+          </time>
+          <div>
+            <h2 class="post-card__title">
+              <a href={`${basePath}/${entry.id}`}>{entry.data.title}</a>
+            </h2>
+            <p class="post-card__excerpt">{entry.data.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  )
+}

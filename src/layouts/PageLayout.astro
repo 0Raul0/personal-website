@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 
 interface Props {
   title: string;
@@ -11,19 +12,14 @@ interface Props {
 }
 
 const { title, description, eyebrow, heroImage, pageTitle } = Astro.props;
-const headTitle = pageTitle ?? `${title} — Self Esteem`;
+const headTitle = pageTitle ?? `${title} — Raul Sheth`;
 ---
 
 <BaseLayout title={headTitle} description={description} image={heroImage}>
   <div class="page">
     <header class="page-nav">
-      <a class="page-nav__brand" href="/">Self <span>Esteem</span></a>
-      <nav aria-label="Primary">
-        <a href="/work">Work</a>
-        <a href="/studio">Studio</a>
-        <a href="/blog">Blog</a>
-        <a href="/contact">Contact</a>
-      </nav>
+      <a class="page-nav__brand" href="/">Raul <span>Sheth</span></a>
+      <Navigation label="Primary" />
     </header>
 
     <main class="page-main">
