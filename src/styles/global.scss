@@ -3,11 +3,17 @@
 $title-font: 'Space Grotesk', sans-serif;
 $subtitle-font: 'Inter', sans-serif;
 $italic-font: 'Playfair Display', serif;
-$blog-bg: #e9e6e4;
+$blog-bg: #f1eadc;
 $body-bg: #121418;
 $title-color: #121418;
 $subtitle-color: #161419;
-$border-color: #94918f;
+$border-color: #a29b8d;
+// Faded book jackets, cut paper, and cloth: a small, reusable patchwork palette.
+$patch-ochre: #e3bc64;
+$patch-rust: #dba38f;
+$patch-sage: #b8c5ad;
+$patch-blue: #a6bdcc;
+$rust-ink: #934430;
 
 * {
   box-sizing: border-box;
@@ -58,8 +64,11 @@ img {
     letter-spacing: -1px;
     color: $title-color;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
-    span {
+    em {
       font-family: $italic-font;
       font-style: italic;
       font-weight: 400;
@@ -429,6 +438,7 @@ em {
 }
 .about-name em {
   letter-spacing: -0.065em;
+  color: $rust-ink;
 }
 .about-lede {
   font-family: $title-font;
@@ -445,6 +455,8 @@ em {
   font-size: 16px;
   line-height: 1.65;
   margin-bottom: 34px;
+  background: $patch-sage;
+  padding: 24px 24px 12px;
 }
 .about-note__mark {
   font-family: $italic-font;
@@ -463,11 +475,17 @@ em {
   align-items: center;
   gap: 18px;
   border-bottom: 1px solid $border-color;
-  padding: 22px 0;
+  padding: 22px 16px;
   text-decoration: none;
   font-family: $title-font;
   font-size: clamp(19px, 2vw, 26px);
   letter-spacing: -0.5px;
+}
+.about-chapters a:first-child {
+  background: $patch-ochre;
+}
+.about-chapters a:last-child {
+  background: $patch-blue;
 }
 .about-chapters__number {
   font-size: 12px;
@@ -509,6 +527,9 @@ em {
 .portrait {
   margin: 0;
   min-width: 0;
+  align-self: start;
+  padding: 12px;
+  background: $patch-ochre;
 }
 .portrait img {
   width: 100%;
@@ -530,10 +551,12 @@ em {
   object-position: 50% 36%;
 }
 .portrait--2 {
+  background: $patch-blue;
   margin-top: 0;
   transform: rotate(-3deg);
 }
 .portrait--3 {
+  background: $patch-rust;
   margin-top: 44px;
   transform: rotate(3deg);
 }
@@ -659,5 +682,81 @@ em {
   }
   .page-title {
     overflow-wrap: anywhere;
+  }
+}
+
+/* Shared colour patches link the three sections without recolouring the photos. */
+.patchwork-mark {
+  display: grid;
+  grid-template-columns: repeat(2, 10px);
+  grid-template-rows: repeat(2, 10px);
+  flex: 0 0 auto;
+  transform: rotate(-8deg);
+}
+.patchwork-mark i:nth-child(1),
+.patchwork-seam i:nth-child(1) {
+  background: $patch-ochre;
+}
+.patchwork-mark i:nth-child(2),
+.patchwork-seam i:nth-child(2) {
+  background: $patch-rust;
+}
+.patchwork-mark i:nth-child(3),
+.patchwork-seam i:nth-child(3) {
+  background: $patch-sage;
+}
+.patchwork-mark i:nth-child(4),
+.patchwork-seam i:nth-child(4) {
+  background: $patch-blue;
+}
+.page-nav nav a {
+  padding: 8px 10px;
+}
+.page-nav nav a:nth-child(1):is([aria-current='page'], .is-active, :hover) {
+  background: $patch-sage;
+}
+.page-nav nav a:nth-child(2):is([aria-current='page'], .is-active, :hover) {
+  background: $patch-ochre;
+}
+.page-nav nav a:nth-child(3):is([aria-current='page'], .is-active, :hover) {
+  background: $patch-blue;
+}
+.page--blog .page-head,
+.page--reading .page-head {
+  padding: clamp(24px, 4vw, 40px);
+  border-bottom-color: $title-color;
+}
+.page--blog .page-head {
+  background: $patch-ochre;
+}
+.page--reading .page-head {
+  background: $patch-blue;
+}
+.patchwork-seam {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  height: 10px;
+}
+::selection {
+  background: $patch-ochre;
+  color: $title-color;
+}
+@media (max-width: 560px) {
+  .page-nav nav {
+    gap: 6px;
+  }
+  .page-nav nav a {
+    font-size: 15px;
+    padding: 8px;
+  }
+  .portrait {
+    padding: 8px;
+  }
+  .about-note {
+    padding: 20px 16px 8px;
+    gap: 12px;
+  }
+  .about-chapters a {
+    padding: 20px 12px;
   }
 }

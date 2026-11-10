@@ -2,7 +2,20 @@
 
 Source of truth: [src/styles/global.scss](src/styles/global.scss).
 
-The site preserves Self Esteem’s editorial language: warm paper (`#e9e6e4`), ink (`#121418`), thin rules (`#94918f`), oversized headings, and italic accents. Avoid gradients, shadows, and accent colors.
+The site preserves Self Esteem’s editorial language: warm paper (`#f1eadc`), ink (`#121418`), thin rules (`#a29b8d`), oversized headings, and italic accents. Colour comes from flat, irregularly arranged patches inspired by faded book jackets and cloth. Avoid gradients and shadows.
+
+## Patchwork palette
+
+| Colour     | Hex       | Placement                                |
+| ---------- | --------- | ---------------------------------------- |
+| Warm paper | `#f1eadc` | Site background                          |
+| Ochre      | `#e3bc64` | Blog, first portrait frame               |
+| Faded rust | `#dba38f` | Third portrait frame                     |
+| Sage       | `#b8c5ad` | About navigation and introduction note   |
+| Dusty blue | `#a6bdcc` | Literature Review, second portrait frame |
+| Rust ink   | `#934430` | Italic surname on the paper background   |
+
+Use dark ink on every pastel patch. Keep the portraits monochrome. The shared four-square mark and footer seam carry the palette across sections without creating extra content. Active navigation keeps its underline as well as its colour.
 
 ## Typography
 
