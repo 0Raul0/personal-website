@@ -44,7 +44,8 @@ const portraits = [
       </div>
       <nav class="about-chapters" aria-label="Explore my writing">
         <a href="/blog"
-          ><span class="about-chapters__number">02</span><span>Blog <em>Notes & thoughts</em></span
+          ><span class="about-chapters__number">02</span><span
+            >Blog <em>— notes & thoughts</em></span
           ><svg
             aria-hidden="true"
             viewBox="0 0 24 24"
@@ -79,7 +80,12 @@ const portraits = [
                 loading={index === 0 ? 'eager' : 'lazy'}
               />
               <figcaption>
-                {portrait.number} / {portrait.caption}
+                <>
+                  <span>
+                    {portrait.number} / {portrait.caption}
+                  </span>
+                  <span aria-hidden="true">↗</span>
+                </>
               </figcaption>
             </figure>
           ))

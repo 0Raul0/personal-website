@@ -2,9 +2,7 @@
 
 Source of truth: [src/styles/global.scss](src/styles/global.scss).
 
-The site preserves Self Esteem’s editorial language: warm ivory (`#f2f0eb`), charcoal (`#29262b`), thin rules (`#c9c4c4`), oversized headings, and italic accents. The single colour accent is smoked plum (`#6b5668`), reserved for the surname, small labels, and active navigation. Quiet mauve paper (`#e9e4e7`) and warm stone (`#e7e5e0`) define the writing tiles and a flat backing behind the portraits. Keep portraits monochrome; avoid multicoloured frames, badges, decorative stripes, gradients, and shadows.
-
-Patchwork comes from proportions and alignment: unequal writing tiles, an inset biography, and three unrotated portrait crops with staggered edges and a small overlap. Preserve the text-left / portraits-right structure on desktop and stack on mobile.
+The site preserves Self Esteem’s editorial language: warm paper (`#e9e6e4`), ink (`#121418`), thin rules (`#94918f`), oversized headings, and italic accents. Avoid gradients, shadows, and accent colors.
 
 ## Typography
 
