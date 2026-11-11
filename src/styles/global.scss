@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/fonts/playfair-display-latin-400-italic.woff2') format('woff2');
-  font-style: italic;
+  src: url('/fonts/playfair-display-latin-400-normal.woff2') format('woff2');
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
@@ -421,17 +421,13 @@ i {
   font-size: 15px;
 }
 .about-greeting {
-  font-family: $title-font;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
   font-size: clamp(36px, 4vw, 58px);
   line-height: 1.15;
   letter-spacing: -0.04em;
-  font-weight: 500;
-  margin: 42px 0 28px;
-}
-.about-greeting em {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
   font-weight: 400;
+  margin: 42px 0 28px;
 }
 .about-bio {
   display: grid;
