@@ -19,7 +19,9 @@ const headTitle = pageTitle ?? `${title} — Raul Sheth`;
 <BaseLayout title={headTitle} description={description} image={heroImage}>
   <div class="page">
     <header class="page-nav">
-      <a class="page-nav__brand" href="/">Raul <span>Sheth</span></a>
+      <a class="page-nav__brand" href="/" aria-label="Raul Sheth — home">
+        <img src="/images/raul-sheth-logo.png" alt="Raul Sheth" width="984" height="338" />
+      </a>
       <Navigation label="Primary" />
     </header>
 
