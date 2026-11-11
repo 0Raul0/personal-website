@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
 @font-face {
-  font-family: 'Caveat';
-  src: url('/fonts/caveat-latin-500-normal.woff2') format('woff2');
+  font-family: 'Space Grotesk';
+  src: url('/fonts/space-grotesk-latin-wght-normal.woff2') format('woff2');
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300 700;
   font-display: swap;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 $title-font: 'Space Grotesk', sans-serif;
-$subtitle-font: 'Inter', sans-serif;
-$italic-font: 'Playfair Display', serif;
 $blog-bg: #e9e6e4;
 $body-bg: #121418;
 $title-color: #121418;
@@ -26,7 +25,7 @@ html {
 body {
   margin: 0;
   background: $blog-bg;
-  font-family: $subtitle-font;
+  font-family: $title-font;
 }
 a {
   color: inherit;
@@ -57,7 +56,7 @@ img {
   justify-content: space-between;
   padding: 24px clamp(20px, 4vw, 64px);
   border-bottom: 1px solid $border-color;
-  font-family: $subtitle-font;
+  font-family: $title-font;
 
   &__brand {
     display: inline-flex;
@@ -83,8 +82,8 @@ img {
       letter-spacing: -0.3px;
 
       &:hover {
-        font-style: italic;
-        font-family: $italic-font;
+        text-decoration: underline;
+        text-underline-offset: 6px;
       }
     }
   }
@@ -133,8 +132,7 @@ img {
 }
 
 .page-eyebrow {
-  font-family: $italic-font;
-  font-style: italic;
+  font-family: $title-font;
   font-size: 18px;
   margin-bottom: 14px;
   color: $subtitle-color;
@@ -196,8 +194,7 @@ img {
   }
 
   blockquote {
-    font-family: $italic-font;
-    font-style: italic;
+    font-family: $title-font;
     font-size: 24px;
     line-height: 1.4;
     border-left: 1px solid $border-color;
@@ -280,12 +277,6 @@ img {
     font-size: 22px;
     letter-spacing: -1px;
     color: $title-color;
-
-    span {
-      font-family: $italic-font;
-      font-style: italic;
-      font-weight: 400;
-    }
   }
 
   nav {
@@ -300,8 +291,8 @@ img {
       font-size: 15px;
 
       &:hover {
-        font-family: $italic-font;
-        font-style: italic;
+        text-decoration: underline;
+        text-underline-offset: 6px;
       }
     }
   }
@@ -309,8 +300,7 @@ img {
   &__meta {
     font-size: 13px;
     color: $subtitle-color;
-    font-family: $italic-font;
-    font-style: italic;
+    font-family: $title-font;
   }
 }
 
@@ -336,8 +326,7 @@ img {
 
   &__meta {
     font-size: 13px;
-    font-family: $italic-font;
-    font-style: italic;
+    font-family: $title-font;
     margin-bottom: 8px;
   }
 
@@ -351,8 +340,7 @@ img {
     color: $title-color;
 
     span {
-      font-family: $italic-font;
-      font-style: italic;
+      font-family: $title-font;
       font-weight: 400;
     }
   }
@@ -375,8 +363,7 @@ img {
   display: flex;
   gap: 18px;
   font-size: 14px;
-  font-family: $italic-font;
-  font-style: italic;
+  font-family: $title-font;
   color: $subtitle-color;
   margin-top: 18px;
 }
@@ -388,9 +375,9 @@ img {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-em {
-  font-family: $italic-font;
-  font-weight: 400;
+em,
+i {
+  font-style: normal;
 }
 
 /* About: an editorial spread, with the entire story in the left column. */
@@ -419,8 +406,7 @@ em {
   letter-spacing: 1.2px;
 }
 .about-kicker span:last-child {
-  font-family: $italic-font;
-  font-style: italic;
+  font-family: $title-font;
   text-transform: none;
   letter-spacing: 0;
   font-size: 15px;
@@ -447,16 +433,13 @@ em {
   margin: 0;
 }
 .about-bio__entry--lead {
-  font-size: clamp(19px, 1.5vw, 20px);
+  display: block;
 }
 .about-bio__entry--indented {
   margin-left: 24px;
 }
 .about-bio__mark {
-  font-family: $italic-font;
-  font-size: 28px;
-  line-height: 1;
-  padding-top: 6px;
+  padding-top: 4px;
   color: #686260;
 
   svg {
@@ -465,22 +448,15 @@ em {
     height: 24px;
   }
 }
-.about-bio__mark--section {
-  font-size: 20px;
-  padding-top: 5px;
-}
-.about-bio__text strong {
-  font-weight: 500;
+.about-bio__text strong,
+.about-signoff strong {
+  font-weight: 700;
 }
 .about-signoff {
-  font-family: 'Caveat', cursive;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin: 24px 0 40px 56px;
-  width: fit-content;
-  transform: rotate(-2deg);
-  transform-origin: left center;
+  font-family: $title-font;
+  font-size: 19px;
+  line-height: 1.7;
+  margin: 24px 0 40px;
 }
 .about-chapters {
   border-top: 1px solid $border-color;
@@ -566,14 +542,12 @@ em {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  font-family: $italic-font;
-  font-style: italic;
+  font-family: $title-font;
   font-size: 12px;
   padding-top: 10px;
 }
 .about-portraits__footnote {
-  font-family: $italic-font;
-  font-style: italic;
+  font-family: $title-font;
   text-align: right;
   font-size: 15px;
   margin-top: 24px;
@@ -600,9 +574,6 @@ em {
   .about-chapters a {
     gap: 10px;
   }
-  .about-chapters a em {
-    display: block;
-  }
 }
 @media (max-width: 680px) {
   .about-spread {
@@ -621,9 +592,6 @@ em {
   .about-bio__entry--indented {
     margin-left: 12px;
   }
-  .about-signoff {
-    margin-left: 40px;
-  }
   .about-portraits {
     border-left: 0;
     border-top: 1px solid $border-color;
@@ -635,16 +603,12 @@ em {
   .portrait--1 {
     width: 86%;
   }
-  .about-chapters a em {
-    display: inline;
-  }
 }
 .empty-state {
   padding: 24px 0 64px;
 }
 .empty-state__title {
-  font-family: $italic-font;
-  font-style: italic;
+  font-family: $title-font;
   font-size: 32px;
   margin-top: 0;
 }
