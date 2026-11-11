@@ -32,12 +32,33 @@ const portraits = [
     <section class="about-copy" aria-labelledby="about-greeting">
       <div class="about-kicker"><span>01 / About</span><span>A personal journal</span></div>
       <h1 id="about-greeting" class="about-greeting">Hi I'm <em>Raul Sheth!</em></h1>
-      <p class="about-bio">
-        I have recently graduated from Christ Church, University of Oxford from Computer Science and
-        Philosophy. This is a little personal page where I talk about various AI Safety related
-        topics that interest me! Occasionally, I also plan to write the odd book review and summary,
-        both for AI Safety and general philosophy.
-      </p>
+      <div class="about-bio">
+        <p class="about-bio__entry about-bio__entry--lead">
+          <span class="about-bio__mark" aria-hidden="true">*</span>
+          <span class="about-bio__text">
+            I have recently graduated from Christ Church, University of Oxford from
+            <em>Computer Science and Philosophy.</em>
+          </span>
+        </p>
+        <p class="about-bio__entry about-bio__entry--indented">
+          <span class="about-bio__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25">
+              <path d="M5 3v9a4 4 0 0 0 4 4h10m-4-4 4 4-4 4"></path>
+            </svg>
+          </span>
+          <span class="about-bio__text">
+            This is a little personal page where I talk about various <strong>AI Safety</strong>
+            related topics that interest me!
+          </span>
+        </p>
+        <p class="about-bio__entry about-bio__entry--indented">
+          <span class="about-bio__mark about-bio__mark--section" aria-hidden="true">§</span>
+          <span class="about-bio__text">
+            Occasionally, I also plan to write the odd <em>book review and summary,</em> both for AI Safety
+            and general philosophy.
+          </span>
+        </p>
+      </div>
       <p class="about-signoff">Enjoy your stay :)</p>
       <nav class="about-chapters" aria-label="Explore my writing">
         <a href="/blog"

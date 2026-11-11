@@ -434,17 +434,50 @@ em {
   margin: 42px 0 28px;
 }
 .about-bio {
-  max-width: 50ch;
-  font-size: clamp(19px, 1.5vw, 20px);
-  line-height: 1.75;
+  display: grid;
+  gap: 24px;
+  max-width: 47ch;
+  font-size: 19px;
+  line-height: 1.7;
+}
+.about-bio__entry {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 14px;
   margin: 0;
+}
+.about-bio__entry--lead {
+  font-size: clamp(19px, 1.5vw, 20px);
+}
+.about-bio__entry--indented {
+  margin-left: 24px;
+}
+.about-bio__mark {
+  font-family: $italic-font;
+  font-size: 28px;
+  line-height: 1;
+  padding-top: 6px;
+  color: #686260;
+
+  svg {
+    display: block;
+    width: 18px;
+    height: 24px;
+  }
+}
+.about-bio__mark--section {
+  font-size: 20px;
+  padding-top: 5px;
+}
+.about-bio__text strong {
+  font-weight: 500;
 }
 .about-signoff {
   font-family: 'Caveat', cursive;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
-  margin: 18px 0 44px;
+  margin: 24px 0 40px 56px;
   width: fit-content;
   transform: rotate(-2deg);
   transform-origin: left center;
@@ -581,6 +614,15 @@ em {
   }
   .about-kicker {
     flex-wrap: nowrap;
+  }
+  .about-bio__entry {
+    gap: 10px;
+  }
+  .about-bio__entry--indented {
+    margin-left: 12px;
+  }
+  .about-signoff {
+    margin-left: 40px;
   }
   .about-portraits {
     border-left: 0;
