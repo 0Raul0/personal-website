@@ -9,6 +9,14 @@
     U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/playfair-display-latin-400-italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
 $title-font: 'Space Grotesk', sans-serif;
 $blog-bg: #e9e6e4;
 $body-bg: #121418;
@@ -392,6 +400,7 @@ i {
 }
 .about-copy {
   min-width: 0;
+  align-self: start;
 }
 .about-kicker,
 .about-portraits__label {
@@ -418,6 +427,11 @@ i {
   letter-spacing: -0.04em;
   font-weight: 500;
   margin: 42px 0 28px;
+}
+.about-greeting em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
 }
 .about-bio {
   display: grid;
@@ -448,13 +462,13 @@ i {
     height: 24px;
   }
 }
-.about-bio__text strong,
-.about-signoff strong {
+.about-bio__text strong {
   font-weight: 700;
 }
 .about-signoff {
   font-family: $title-font;
   font-size: 19px;
+  font-weight: 400;
   line-height: 1.7;
   margin: 24px 0 40px;
 }
@@ -490,25 +504,40 @@ i {
   text-underline-offset: 5px;
 }
 .about-portraits {
+  // Let the text determine the row height; fit the photos into that same space.
+  contain: size;
+  display: flex;
+  flex-direction: column;
   min-width: 0;
+  min-height: 0;
   border-left: 1px solid $border-color;
   padding-left: clamp(20px, 3vw, 42px);
 }
 .about-portraits__label {
   border-bottom: 0;
+  flex-shrink: 0;
 }
 .portrait-grid {
+  flex: 1;
+  min-height: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px 18px;
+  grid-template-rows: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 18px;
+  padding: 8px;
 }
 .portrait {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-width: 0;
+  min-height: 0;
 }
 .portrait img {
+  flex: 1;
+  min-height: 0;
   width: 100%;
-  height: auto;
+  height: 0;
   object-fit: cover;
   display: block;
   filter: grayscale(1) contrast(1.08);
@@ -521,8 +550,6 @@ i {
   transform: rotate(2deg);
 }
 .portrait--1 img {
-  aspect-ratio: 1.12;
-  height: auto;
   object-position: 50% 36%;
 }
 .portrait--2 {
@@ -533,12 +560,11 @@ i {
   margin-top: 44px;
   transform: rotate(3deg);
 }
-.portrait--2 img,
 .portrait--3 img {
-  aspect-ratio: 0.78;
-  height: auto;
+  object-position: 50% 25%;
 }
 .portrait figcaption {
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   gap: 8px;
@@ -547,10 +573,11 @@ i {
   padding-top: 10px;
 }
 .about-portraits__footnote {
+  flex-shrink: 0;
   font-family: $title-font;
   text-align: right;
   font-size: 15px;
-  margin-top: 24px;
+  margin: 18px 0 0;
 }
 @media (prefers-reduced-motion: reduce) {
   .about-chapters a svg {
@@ -593,6 +620,8 @@ i {
     margin-left: 12px;
   }
   .about-portraits {
+    contain: none;
+    display: block;
     border-left: 0;
     border-top: 1px solid $border-color;
     padding: 24px 8px 0 0;
@@ -602,6 +631,22 @@ i {
   }
   .portrait--1 {
     width: 86%;
+  }
+  .portrait-grid {
+    grid-template-rows: auto auto;
+  }
+  .portrait {
+    display: block;
+  }
+  .portrait img {
+    height: auto;
+  }
+  .portrait--1 img {
+    aspect-ratio: 1.12;
+  }
+  .portrait--2 img,
+  .portrait--3 img {
+    aspect-ratio: 0.78;
   }
 }
 .empty-state {
