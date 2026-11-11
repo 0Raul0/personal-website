@@ -52,17 +52,15 @@ img {
   font-family: $subtitle-font;
 
   &__brand {
-    font-family: $title-font;
-    font-weight: 700;
-    font-size: 22px;
-    letter-spacing: -1px;
-    color: $title-color;
+    display: inline-flex;
+    flex-shrink: 0;
     text-decoration: none;
+    line-height: 0;
 
-    span {
-      font-family: $italic-font;
-      font-style: italic;
-      font-weight: 400;
+    img {
+      display: block;
+      width: 160px;
+      height: auto;
     }
   }
 
