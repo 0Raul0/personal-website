@@ -264,7 +264,7 @@ img {
   margin-top: auto;
 
   &__inner {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 40px clamp(20px, 4vw, 64px);
     display: grid;
@@ -390,7 +390,7 @@ i {
 
 /* About: an editorial spread, with the entire story in the left column. */
 .page-main--about {
-  max-width: 1480px;
+  max-width: none;
   padding: clamp(32px, 4vw, 64px) clamp(20px, 4vw, 64px);
 }
 .about-spread {
@@ -521,10 +521,12 @@ i {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(0, 1.4fr) minmax(0, 1fr);
-  gap: 18px;
-  padding: 8px;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-areas:
+    'portrait elsewhere'
+    'portrait after-hours';
+  gap: 16px;
 }
 .portrait {
   display: flex;
@@ -544,21 +546,19 @@ i {
   background: $body-bg;
 }
 .portrait--1 {
-  grid-column: 1 / -1;
-  width: 84%;
-  margin: 6px 0 0 auto;
-  transform: rotate(2deg);
+  grid-area: portrait;
 }
 .portrait--1 img {
   object-position: 50% 36%;
 }
 .portrait--2 {
-  margin-top: 0;
-  transform: rotate(-3deg);
+  grid-area: elsewhere;
+}
+.portrait--2 img {
+  object-position: 50% 65%;
 }
 .portrait--3 {
-  margin-top: 44px;
-  transform: rotate(3deg);
+  grid-area: after-hours;
 }
 .portrait--3 img {
   object-position: 50% 25%;
@@ -624,29 +624,14 @@ i {
     display: block;
     border-left: 0;
     border-top: 1px solid $border-color;
-    padding: 24px 8px 0 0;
+    padding: 24px 0 0;
   }
   .about-portraits__label {
     padding-bottom: 24px;
   }
-  .portrait--1 {
-    width: 86%;
-  }
   .portrait-grid {
-    grid-template-rows: auto auto;
-  }
-  .portrait {
-    display: block;
-  }
-  .portrait img {
-    height: auto;
-  }
-  .portrait--1 img {
-    aspect-ratio: 1.12;
-  }
-  .portrait--2 img,
-  .portrait--3 img {
-    aspect-ratio: 0.78;
+    aspect-ratio: 1;
+    gap: 12px;
   }
 }
 .empty-state {
