@@ -421,13 +421,13 @@ i {
   font-size: 15px;
 }
 .about-greeting {
-  font-family: 'Playfair Display', serif;
-  font-style: normal;
-  font-size: clamp(36px, 4vw, 58px);
-  line-height: 1.15;
-  letter-spacing: -0.04em;
-  font-weight: 400;
   margin: 42px 0 28px;
+}
+.about-greeting img {
+  display: block;
+  width: min(100%, 380px);
+  height: auto;
+  mix-blend-mode: multiply;
 }
 .about-bio {
   display: grid;
