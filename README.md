@@ -21,6 +21,8 @@ The static build is written to `dist/`. The production domain remains `https://r
 
 The header uses `public/images/raul-sheth-logo.png`, a transparent PNG isolated from the handwritten name on page 2 of the supplied notebook PDF. It is shared across all three sections and links back to About. The notebook itself is not included in the repository.
 
+The browser-tab icon uses the handwritten R and S together in `public/favicon-rs.png`, with light lettering on a dark background for readability at small sizes.
+
 ## About portraits
 
 The About page uses a text column on the left and three locally served black-and-white portrait placeholders on the right. On small screens the portraits move below the text. These are generated fictional portraits, not photos of Raul. Replace `public/images/about/portrait-01.webp`, `portrait-02.webp`, and `portrait-03.webp` with personal photos, then update the alt text, intrinsic dimensions, and captions in `src/pages/index.astro`. The first image is eager-loaded; the other two are lazy-loaded. Images are compressed WebP assets and require no external image service.
