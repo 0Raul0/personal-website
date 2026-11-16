@@ -4,11 +4,23 @@ import curated from '../data/opportunities-curated.json';
 import live from '../data/opportunities-live.json';
 
 const today = new Date().toISOString().slice(0, 10);
-const valid = (item) => (!item.deadline || item.deadline >= today) &&
+const valid = (item) =>
+  (!item.deadline || item.deadline >= today) &&
   (item.category !== 'Events' || !item.startDate || item.startDate >= today);
 const sourceItems = [
-  ...curated.filter(valid).map((x) => ({...x, featured: true, status: x.availableFrom && x.availableFrom > today ? 'Upcoming' : x.deadline ? 'Deadline listed' : 'Check source'})),
-  ...live.listings.filter(valid).map((x) => ({...x, featured: false})),
+  ...curated
+    .filter(valid)
+    .map((x) => ({
+      ...x,
+      featured: true,
+      status:
+        x.availableFrom && x.availableFrom > today
+          ? 'Upcoming'
+          : x.deadline
+            ? 'Deadline listed'
+            : 'Check source',
+    })),
+  ...live.listings.filter(valid).map((x) => ({ ...x, featured: false })),
 ];
 const dedup = new Set();
 const opportunities = sourceItems.filter((x) => {
@@ -18,8 +30,15 @@ const opportunities = sourceItems.filter((x) => {
   return true;
 });
 const groups = ['All', 'Jobs', 'Fellowships', 'Research projects', 'Courses', 'Events', 'Funding'];
-const updated = live.updatedAt ? new Date(live.updatedAt).toLocaleDateString('en-GB', {day:'numeric', month:'long', year:'numeric'}) : null;
+const updated = live.updatedAt
+  ? new Date(live.updatedAt).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })
+  : null;
 ---
+
 <PageLayout
   title="Opportunities"
   eyebrow="04 / AI Safety"
@@ -27,43 +46,131 @@ const updated = live.updatedAt ? new Date(live.updatedAt).toLocaleDateString('en
 >
   <section class="opportunities-intro">
     <div>
-      <p class="opportunities-note">Selected early-career opportunities alongside the public AISafety.com directory. Published listings are not individually verified, and applications may close without notice.</p>
-      <p class="opportunities-update">{updated ? `Last feed refresh: ${updated}` : 'Automated feed is being initialised; selected opportunities are available below.'} · Daily refresh scheduled at 07:18 UTC</p>
+      <p class="opportunities-note">
+        Selected early-career opportunities alongside the public AISafety.com directory. Published
+        listings are not individually verified, and applications may close without notice.
+      </p>
+      <p class="opportunities-update">
+        {
+          updated
+            ? `Last feed refresh: ${updated}`
+            : 'Automated feed is being initialised; selected opportunities are available below.'
+        } · Daily refresh scheduled at 07:18 UTC
+      </p>
     </div>
-    <a href="https://aisafety.com" target="_blank" rel="noopener noreferrer" class="opportunities-source">Data source: AISafety.com ↗</a>
+    <a
+      href="https://aisafety.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="opportunities-source">Data source: AISafety.com ↗</a
+    >
   </section>
   <section class="opportunities-controls" aria-label="Filter opportunities">
     <div class="opportunities-categories">
-      {groups.map((group) => <button type="button" class:list={{ selected: group === 'All' }} data-category={group}>{group}</button>)}
+      {
+        groups.map((group) => (
+          <button type="button" class:list={{ selected: group === 'All' }} data-category={group}>
+            {group}
+          </button>
+        ))
+      }
     </div>
     <div class="opportunities-filters">
-      <label class="opportunities-search-label" for="opportunities-search">Search<input id="opportunities-search" type="search" placeholder="Role, organisation, topic…"/></label>
-      <label class="opportunities-checkbox"><input id="opportunities-uk" type="checkbox"/> London / UK / remote</label>
-      <label class="opportunities-checkbox"><input id="opportunities-entry" type="checkbox"/> Early-career focus</label>
+      <label class="opportunities-search-label" for="opportunities-search"
+        >Search<input
+          id="opportunities-search"
+          type="search"
+          placeholder="Role, organisation, topic…"
+        /></label
+      >
+      <label class="opportunities-checkbox"
+        ><input id="opportunities-uk" type="checkbox" /> London / UK / remote</label
+      >
+      <label class="opportunities-checkbox"
+        ><input id="opportunities-entry" type="checkbox" /> Early-career focus</label
+      >
     </div>
   </section>
-  <div class="opportunities-summary"><span id="opportunities-count">{opportunities.length} opportunities</span><span>Check the original application page before applying</span></div>
-  <section id="opportunities-list" class="opportunities-list" aria-label="AI safety opportunity listings">
-    {opportunities.map((item) => (
-      <article class="opportunity" data-category={item.category} data-text={[item.title,item.organisation,item.detail,item.location].join(' ').toLowerCase()} data-location={(item.location || '').toLowerCase()} data-experience={(item.experience || '').toLowerCase()} data-featured={item.featured ? 'yes' : 'no'}>
-        <div class="opportunity-aside">
-          <span class="opportunity-category">{item.category}</span>
-          {item.featured && <span class="opportunity-featured">Selected</span>}
-          {item.deadline && <time datetime={item.deadline}>Deadline {new Date(item.deadline+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}</time>}
-          {item.availableFrom && item.availableFrom > today && <span>Opens {new Date(item.availableFrom+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',timeZone:'UTC'})}</span>}
-        </div>
-        <div class="opportunity-main">
-          <h2><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title} <span aria-hidden="true">↗</span></a></h2>
-          <p class="opportunity-meta">{[item.organisation,item.location].filter(Boolean).join(' · ')}</p>
-          {item.detail && <p class="opportunity-detail">{item.detail}</p>}
-          <span class="opportunity-status">{item.status || 'Check source'} · {item.featured ? 'Selected listing' : 'Public feed'}</span>
-        </div>
-      </article>
-    ))}
-    {opportunities.length === 0 && <p>No opportunities are available from the current snapshot. Visit <a href="https://aisafety.com">AISafety.com</a> directly.</p>}
+  <div class="opportunities-summary">
+    <span id="opportunities-count">{opportunities.length} opportunities</span><span
+      >Check the original application page before applying</span>
+  </div>
+  <section
+    id="opportunities-list"
+    class="opportunities-list"
+    aria-label="AI safety opportunity listings"
+  >
+    {
+      opportunities.map((item) => (
+        <article
+          class="opportunity"
+          data-category={item.category}
+          data-text={[item.title, item.organisation, item.detail, item.location]
+            .join(' ')
+            .toLowerCase()}
+          data-location={(item.location || '').toLowerCase()}
+          data-experience={(item.experience || '').toLowerCase()}
+          data-featured={item.featured ? 'yes' : 'no'}
+        >
+          <div class="opportunity-aside">
+            <span class="opportunity-category">{item.category}</span>
+            {item.featured && <span class="opportunity-featured">Selected</span>}
+            {item.deadline && (
+              <time datetime={item.deadline}>
+                Deadline{' '}
+                {new Date(item.deadline + 'T12:00:00Z').toLocaleDateString('en-GB', {
+                  day: 'numeric',
+                  month: 'short',
+                  year: 'numeric',
+                  timeZone: 'UTC',
+                })}
+              </time>
+            )}
+            {item.availableFrom && item.availableFrom > today && (
+              <span>
+                Opens{' '}
+                {new Date(item.availableFrom + 'T12:00:00Z').toLocaleDateString('en-GB', {
+                  day: 'numeric',
+                  month: 'short',
+                  timeZone: 'UTC',
+                })}
+              </span>
+            )}
+          </div>
+          <div class="opportunity-main">
+            <h2>
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                {item.title} <span aria-hidden="true">↗</span>
+              </a>
+            </h2>
+            <p class="opportunity-meta">
+              {[item.organisation, item.location].filter(Boolean).join(' · ')}
+            </p>
+            {item.detail && <p class="opportunity-detail">{item.detail}</p>}
+            <span class="opportunity-status">
+              {item.status || 'Check source'} · {item.featured ? 'Selected listing' : 'Public feed'}
+            </span>
+          </div>
+        </article>
+      ))
+    }
+    {
+      opportunities.length === 0 && (
+        <p>
+          No opportunities are available from the current snapshot. Visit{' '}
+          <a href="https://aisafety.com">AISafety.com</a> directly.
+        </p>
+      )
+    }
   </section>
-  <p id="opportunities-empty" class="opportunities-empty" hidden>No matching listings. Try another category or remove a filter.</p>
-  <p class="opportunities-disclaimer">The daily refresh is automated, but it cannot guarantee a listing is still accepting applications. Entries with passed deadlines are hidden, while undated roles should always be checked on the employer's site. Listings from this feed are not endorsements.</p>
+  <p id="opportunities-empty" class="opportunities-empty" hidden>
+    No matching listings. Try another category or remove a filter.
+  </p>
+  <p class="opportunities-disclaimer">
+    The daily refresh is automated, but it cannot guarantee a listing is still accepting
+    applications. Entries with passed deadlines are hidden, while undated roles should always be
+    checked on the employer's site. Listings from this feed are not endorsements.
+  </p>
 </PageLayout>
 <script>
   const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-category]'));
@@ -82,52 +189,224 @@ const updated = live.updatedAt ? new Date(live.updatedAt).toLocaleDateString('en
       const exp = article.dataset.experience || '';
       const category = article.dataset.category || '';
       const isUk = /london|united kingdom|\buk\b|remote|online|virtual|europe|worldwide/.test(loc);
-      const advanced = /senior|principal|lead|director|staff|manager|phd|5\+|five years|10\+/.test(exp + ' ' + article.dataset.text);
-      const matches = (active === 'All' || active === category || (active === 'Fellowships' && category === 'Fellowships & training')) &&
+      const advanced = /senior|principal|lead|director|staff|manager|phd|5\+|five years|10\+/.test(
+        exp + ' ' + article.dataset.text,
+      );
+      const matches =
+        (active === 'All' ||
+          active === category ||
+          (active === 'Fellowships' && category === 'Fellowships & training')) &&
         (!q || (article.dataset.text || '').includes(q)) &&
         (!uk?.checked || isUk) &&
-        (!entry?.checked || (article.dataset.featured === 'yes' || (!advanced && !/senior|principal|staff engineer|director/i.test(article.querySelector('h2')?.textContent || ''))));
+        (!entry?.checked ||
+          article.dataset.featured === 'yes' ||
+          (!advanced &&
+            !/senior|principal|staff engineer|director/i.test(
+              article.querySelector('h2')?.textContent || '',
+            )));
       article.hidden = !matches;
       if (matches) visible++;
     });
     if (count) count.textContent = visible + (visible === 1 ? ' opportunity' : ' opportunities');
     if (empty) empty.hidden = visible > 0;
   };
-  buttons.forEach((button) => button.addEventListener('click', () => {
-    active = button.dataset.category || 'All';
-    buttons.forEach((b) => { b.classList.toggle('selected', b === button); b.setAttribute('aria-pressed', String(b === button)); });
-    apply();
-  }));
-  [search,uk,entry].forEach((control) => control?.addEventListener('input',apply));
+  buttons.forEach((button) =>
+    button.addEventListener('click', () => {
+      active = button.dataset.category || 'All';
+      buttons.forEach((b) => {
+        b.classList.toggle('selected', b === button);
+        b.setAttribute('aria-pressed', String(b === button));
+      });
+      apply();
+    }),
+  );
+  [search, uk, entry].forEach((control) => control?.addEventListener('input', apply));
   apply();
 </script>
 <style>
-  .opportunities-intro{display:flex;align-items:end;justify-content:space-between;gap:28px;border-bottom:1px solid #94918f;padding:0 0 30px;margin-bottom:28px}
-  .opportunities-note{font-size:18px;line-height:1.6;margin:0 0 15px;max-width:63ch}
-  .opportunities-update,.opportunities-source{font-size:12px;line-height:1.6;color:#575450}
-  .opportunities-update{margin:0}.opportunities-source{flex-shrink:0}
-  .opportunities-controls{display:grid;gap:26px;margin:0 0 24px}
-  .opportunities-categories{display:flex;flex-wrap:wrap;gap:8px}
-  .opportunities-categories button{background:transparent;color:#121418;font:inherit;font-size:13px;padding:9px 13px;cursor:pointer;border:1px solid #aaa5a0;border-radius:2px}
-  .opportunities-categories button.selected,.opportunities-categories button:hover{background:#121418;color:#f1ece8;border-color:#121418}
-  .opportunities-filters{display:flex;align-items:end;flex-wrap:wrap;gap:16px 24px;font-size:13px}
-  .opportunities-search-label{display:grid;gap:7px;flex:1 1 240px}
-  .opportunities-search-label input{font:inherit;font-size:15px;padding:12px 13px;color:#121418;background:transparent;border:1px solid #94918f;min-width:0;width:100%}
-  .opportunities-checkbox{display:flex;align-items:center;gap:8px;padding-bottom:10px}
-  .opportunities-checkbox input{accent-color:#121418}
-  .opportunities-summary{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid #94918f;padding:0 0 15px;font-size:12px;letter-spacing:.02em}
-  .opportunity{display:grid;grid-template-columns:170px 1fr;gap:28px;border-bottom:1px solid #94918f;padding:26px 0}
-  .opportunity[hidden],.opportunities-empty[hidden]{display:none}
-  .opportunity-aside{display:flex;flex-direction:column;align-items:start;gap:10px;font-size:12px;color:#575450}
-  .opportunity-category{font-weight:700;color:#121418}
-  .opportunity-featured{display:inline-block;border:1px solid #94918f;padding:3px 7px}
-  .opportunity-main h2{font-size:clamp(20px,3vw,26px);font-weight:600;letter-spacing:-.6px;line-height:1.2;margin:0 0 8px}
-  .opportunity-main h2 a{text-decoration:none}.opportunity-main h2 a:hover{text-decoration:underline}
-  .opportunity-main h2 span{font-weight:400;font-size:.68em}
-  .opportunity-meta{font-size:13px;margin:0 0 14px}
-  .opportunity-detail{font-size:15px;line-height:1.6;margin:0 0 13px;max-width:65ch}
-  .opportunity-status{font-size:11px;letter-spacing:.03em;color:#575450}
-  .opportunities-empty,.opportunities-disclaimer{font-size:13px;line-height:1.6;margin-top:24px}
-  .opportunities-disclaimer{margin-top:40px;border-top:1px solid #94918f;padding-top:20px}
-  @media(max-width:700px){.opportunities-intro{display:block}.opportunities-source{display:inline-block;margin-top:18px}.opportunity{grid-template-columns:1fr;gap:14px}.opportunity-aside{flex-direction:row;flex-wrap:wrap;gap:8px 14px}.opportunities-summary span:last-child{display:none}}
+  .opportunities-intro {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 28px;
+    border-bottom: 1px solid #94918f;
+    padding: 0 0 30px;
+    margin-bottom: 28px;
+  }
+  .opportunities-note {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+    max-width: 63ch;
+  }
+  .opportunities-update,
+  .opportunities-source {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #575450;
+  }
+  .opportunities-update {
+    margin: 0;
+  }
+  .opportunities-source {
+    flex-shrink: 0;
+  }
+  .opportunities-controls {
+    display: grid;
+    gap: 26px;
+    margin: 0 0 24px;
+  }
+  .opportunities-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .opportunities-categories button {
+    background: transparent;
+    color: #121418;
+    font: inherit;
+    font-size: 13px;
+    padding: 9px 13px;
+    cursor: pointer;
+    border: 1px solid #aaa5a0;
+    border-radius: 2px;
+  }
+  .opportunities-categories button.selected,
+  .opportunities-categories button:hover {
+    background: #121418;
+    color: #f1ece8;
+    border-color: #121418;
+  }
+  .opportunities-filters {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    font-size: 13px;
+  }
+  .opportunities-search-label {
+    display: grid;
+    gap: 7px;
+    flex: 1 1 240px;
+  }
+  .opportunities-search-label input {
+    font: inherit;
+    font-size: 15px;
+    padding: 12px 13px;
+    color: #121418;
+    background: transparent;
+    border: 1px solid #94918f;
+    min-width: 0;
+    width: 100%;
+  }
+  .opportunities-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+  .opportunities-checkbox input {
+    accent-color: #121418;
+  }
+  .opportunities-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid #94918f;
+    padding: 0 0 15px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+  }
+  .opportunity {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 28px;
+    border-bottom: 1px solid #94918f;
+    padding: 26px 0;
+  }
+  .opportunity[hidden],
+  .opportunities-empty[hidden] {
+    display: none;
+  }
+  .opportunity-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    font-size: 12px;
+    color: #575450;
+  }
+  .opportunity-category {
+    font-weight: 700;
+    color: #121418;
+  }
+  .opportunity-featured {
+    display: inline-block;
+    border: 1px solid #94918f;
+    padding: 3px 7px;
+  }
+  .opportunity-main h2 {
+    font-size: clamp(20px, 3vw, 26px);
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+  .opportunity-main h2 a {
+    text-decoration: none;
+  }
+  .opportunity-main h2 a:hover {
+    text-decoration: underline;
+  }
+  .opportunity-main h2 span {
+    font-weight: 400;
+    font-size: 0.68em;
+  }
+  .opportunity-meta {
+    font-size: 13px;
+    margin: 0 0 14px;
+  }
+  .opportunity-detail {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 13px;
+    max-width: 65ch;
+  }
+  .opportunity-status {
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    color: #575450;
+  }
+  .opportunities-empty,
+  .opportunities-disclaimer {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 24px;
+  }
+  .opportunities-disclaimer {
+    margin-top: 40px;
+    border-top: 1px solid #94918f;
+    padding-top: 20px;
+  }
+  @media (max-width: 700px) {
+    .opportunities-intro {
+      display: block;
+    }
+    .opportunities-source {
+      display: inline-block;
+      margin-top: 18px;
+    }
+    .opportunity {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .opportunity-aside {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+    }
+    .opportunities-summary span:last-child {
+      display: none;
+    }
+  }
 </style>

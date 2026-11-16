@@ -52,7 +52,6 @@ The filename supplies the article URL, for example `src/content/blog/first-note.
 
 Based on [Self Esteem](https://github.com/m-durana/self-esteem-astro), an Astro adaptation of Aysenur Turk’s editorial layout. See `LICENSE` and `STYLEGUIDE.md`.
 
-
 ## AI safety opportunities
 
 The /opportunities page combines a small list of selected entry points in `src/data/opportunities-curated.json` with an automatically updated public feed in `src/data/opportunities-live.json`. It covers jobs, fellowships and training, research projects, self-study courses, events and funding. Entries with known passed deadlines are hidden, and undated jobs always say to check the source. Selected entries are not automatically checked for closure; edit or remove them as needed.
