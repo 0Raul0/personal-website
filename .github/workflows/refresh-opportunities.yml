@@ -1,6 +1,9 @@
 name: Refresh AI safety opportunities
 
 on:
+  push:
+    paths:
+      - '.github/workflows/refresh-opportunities.yml'
   schedule:
     - cron: '18 7 * * *'
   workflow_dispatch:
