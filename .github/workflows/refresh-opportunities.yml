@@ -1,0 +1,35 @@
+name: Refresh AI safety opportunities
+
+on:
+  schedule:
+    - cron: '18 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-opportunities
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch listings
+        run: node scripts/update-opportunities.mjs
+      - name: Commit refreshed snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/opportunities-live.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh AI safety opportunities"
+            git push
+          fi
