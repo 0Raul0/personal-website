@@ -1,0 +1,114 @@
+[
+  {
+    "id": "govai-research",
+    "title": "GovAI Summer Fellowship — Research Track",
+    "organisation": "Centre for the Governance of AI",
+    "category": "Fellowships",
+    "location": "London",
+    "deadline": "2026-11-22",
+    "detail": "Paid mentored AI governance research; relevant to political sycophancy and epistemic autonomy.",
+    "url": "https://www.governance.ai/opportunities"
+  },
+  {
+    "id": "govai-applied",
+    "title": "GovAI Summer Fellowship — Applied Track",
+    "organisation": "Centre for the Governance of AI",
+    "category": "Fellowships",
+    "location": "London",
+    "deadline": "2026-11-22",
+    "detail": "Practical AI governance experience in policy and research communication.",
+    "url": "https://www.governance.ai/opportunities"
+  },
+  {
+    "id": "ai-safety-camp",
+    "title": "AI Safety Camp — Research Teams",
+    "organisation": "AI Safety Camp",
+    "category": "Research projects",
+    "location": "Remote",
+    "deadline": "2026-11-29",
+    "detail": "Mentored team projects including sycophancy, honesty and model evaluation.",
+    "url": "https://www.aisafety.camp/"
+  },
+  {
+    "id": "talos",
+    "title": "Talos Fellowship — Spring 2027",
+    "organisation": "Talos Network",
+    "category": "Fellowships",
+    "location": "Online / Europe",
+    "deadline": "2026-12-06",
+    "detail": "Structured training with a route into European AI governance placements.",
+    "url": "https://www.talosnetwork.org/talos-fellowship"
+  },
+  {
+    "id": "bluedot-technical",
+    "title": "Technical AI Safety",
+    "organisation": "BlueDot Impact",
+    "category": "Courses",
+    "location": "Remote",
+    "deadline": "2026-11-22",
+    "detail": "Facilitated course on evaluation, interpretability, control and alignment.",
+    "url": "https://bluedot.org/courses/technical-ai-safety"
+  },
+  {
+    "id": "bluedot-sprint",
+    "title": "Technical AI Safety Project Sprint",
+    "organisation": "BlueDot Impact",
+    "category": "Research projects",
+    "location": "Remote",
+    "deadline": "2026-12-27",
+    "detail": "Complete a technical AI safety project with expert guidance.",
+    "url": "https://bluedot.org/courses/technical-ai-safety-project"
+  },
+  {
+    "id": "spar",
+    "title": "SPAR Spring 2027",
+    "organisation": "SPAR",
+    "category": "Research projects",
+    "location": "Remote",
+    "deadline": "2027-01-13",
+    "detail": "Supervised AI safety and governance research; next application window opens in December.",
+    "url": "https://sparai.org/",
+    "availableFrom": "2026-12-16"
+  },
+  {
+    "id": "prism",
+    "title": "PRISM Research Fellowship",
+    "organisation": "PRISM",
+    "category": "Fellowships",
+    "location": "Remote",
+    "deadline": "2027-01-08",
+    "detail": "Mentor-led paper-oriented research fellowship; applications open in December.",
+    "url": "https://prism-research.org/",
+    "availableFrom": "2026-12-14"
+  },
+  {
+    "id": "lisa",
+    "title": "Member Experience Associate",
+    "organisation": "London Initiative for Safe AI",
+    "category": "Jobs",
+    "location": "London",
+    "deadline": null,
+    "detail": "Community-facing AI safety ecosystem role; check employer for current availability.",
+    "url": "https://www.safeai.org.uk/member-experience-associate"
+  },
+  {
+    "id": "arena",
+    "title": "ARENA — Self-study Curriculum",
+    "organisation": "ARENA",
+    "category": "Courses",
+    "location": "Online",
+    "deadline": null,
+    "detail": "Technical machine-learning curriculum in PyTorch, interpretability and evaluations.",
+    "url": "https://www.arena.education/curriculum"
+  },
+  {
+    "id": "rapid",
+    "title": "BlueDot Rapid Grants",
+    "organisation": "BlueDot Impact",
+    "category": "Funding",
+    "location": "Online",
+    "deadline": null,
+    "detail": "Rolling funding for AI safety research time, compute and project costs.",
+    "url": "https://bluedot.org/grants/rapid"
+  }
+]
