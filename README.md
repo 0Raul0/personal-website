@@ -51,3 +51,14 @@ The filename supplies the article URL, for example `src/content/blog/first-note.
 ## Credits
 
 Based on [Self Esteem](https://github.com/m-durana/self-esteem-astro), an Astro adaptation of Aysenur Turk’s editorial layout. See `LICENSE` and `STYLEGUIDE.md`.
+
+
+## AI safety opportunities
+
+The /opportunities page combines a small list of selected entry points in `src/data/opportunities-curated.json` with an automatically updated public feed in `src/data/opportunities-live.json`. It covers jobs, fellowships and training, research projects, self-study courses, events and funding. Entries with known passed deadlines are hidden, and undated jobs always say to check the source. Selected entries are not automatically checked for closure; edit or remove them as needed.
+
+The GitHub Actions workflow `.github/workflows/refresh-opportunities.yml` runs daily at 07:18 UTC on the default branch (scheduled GitHub Actions may run late) and can also be started manually from the Actions tab using **Run workflow**. It runs `node scripts/update-opportunities.mjs`, commits new source data to main, and depends on the production host automatically rebuilding when main changes. Check your hosting provider's build integration: GitHub Actions only updates the repository, not an independently deployed static site.
+
+To refresh locally, run `node scripts/update-opportunities.mjs`, then `npm run build`. The live data is sourced from the [AISafety.com public data API](https://aisafety.com/api/v1), with source links preserved. Failure to retrieve an endpoint is recorded in the snapshot and previously fetched data for that category is retained if still date-valid. This is a useful directory, **not independently confirmed live availability**. Region, experience and deadline filtering is heuristic and does not replace checking employer requirements. Some research projects without direct application links may be absent.
+
+The initial committed snapshot is intentionally empty. Run the new workflow once after merging, or the first scheduled run will populate it.
