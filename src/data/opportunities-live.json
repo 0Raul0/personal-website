@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T19:48:11.844Z",
+  "updatedAt": "2026-11-17T05:25:29.814Z",
   "source": "https://aisafety.com/api/v1/",
   "failures": [],
   "listings": [
@@ -1154,21 +1154,6 @@
       "availableFrom": null,
       "detail": "* In this role, you'll deliver operational processes for ERA's fellowship programmes, conferences and fieldbuilding initiatives.\n* Oversee onboarding for fellows, handling visa sponsorship, immigration compliance and essential documentation.\n* Plan and execute logistics for programme events, workshops and the end-of-fellowship Research Symposium.\n* Support financial operations and develop internal systems for HR, record-keepin",
       "url": "https://docs.google.com/document/d/1ybs6zewDrRUAZaHCIQWirgGoiO_QkttLQUrbWvWUyEs/edit?tab=t.0#heading=h.5bi6oyx937h1",
-      "source": "AISafety.com",
-      "experience": "Junior (1–4 years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-recQXhx0FEoj6SueL",
-      "title": "Office Manager",
-      "organisation": "Center for AI Safety",
-      "category": "Jobs",
-      "location": "San Francisco Bay Area, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll manage day-to-day office operations for a growing team of 30–50 people, serving as the primary contact for operational matters.\n* Oversee office facilities, including building access, maintenance, security, and manage the meal and snack program end to end.\n* Coordinate with vendors for cleaning, supplies, maintenance, and IT services.\n* Prepare onboarding and offboarding logistics, set up company events,",
-      "url": "https://job-boards.greenhouse.io/centerforartificialintelligencesafetyinc/jobs/4478051009",
       "source": "AISafety.com",
       "experience": "Junior (1–4 years experience)",
       "status": "Check source"
@@ -7834,21 +7819,6 @@
       "status": "Check source"
     },
     {
-      "id": "training-recXMfiFlyGEL5zl4",
-      "title": "CLR Fundamentals Program: Autumn 2026",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Online",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-20",
-      "availableFrom": null,
-      "detail": "Course by the Center on Long-Term Risk (CLR) on how transformative AI might be involved in creating large amounts of suffering (s-risks). Covers model personas, safe Pareto improvements, and multiagent AI safety.",
-      "url": "https://forum.effectivealtruism.org/posts/rmz7sNB4YALQTeQ4v/application-open-for-clr-fundamentals-program-autumn-2026",
-      "source": "AISafety.com",
-      "experience": "Low",
-      "status": "Check source"
-    },
-    {
       "id": "training-recvJz2F58gww1dc7",
       "title": "AI Safety Collective at Irvine (AISCI) Research Projects",
       "organisation": "",
@@ -7874,21 +7844,6 @@
       "availableFrom": null,
       "detail": "Guided study of the ARENA materials, run by AI Safety Montréal (AISM). Covers deep learning fundamentals, transformers and mechanistic interpretability, reinforcement learning, and model evaluations.",
       "url": "https://aisafetymontreal.org/technical-fundamentals/",
-      "source": "AISafety.com",
-      "experience": "Low",
-      "status": "Check source"
-    },
-    {
-      "id": "training-recBSEeRdoLPHqoM9",
-      "title": "AGI Strategy",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Montréal, Canada",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-23",
-      "availableFrom": null,
-      "detail": "Run by AI Safety Montréal (AISM) for anyone who wants to upskill in AI safety and get a clearer view of the field and their own place in it. Uses BlueDot Impact's AGI Strategy curriculum. Sessions in English or French.",
-      "url": "https://aisafetymontreal.org/programs/#agiStrategy",
       "source": "AISafety.com",
       "experience": "Low",
       "status": "Check source"
@@ -7964,21 +7919,6 @@
       "availableFrom": null,
       "detail": "For professors in quantitative disciplines, technical founders, and staff-level engineers moving into AI research. Includes a mentored project, plus self-study time and talks to learn modern ML and AI safety.",
       "url": "https://alignment.anthropic.com/2026/anthropic-residency/",
-      "source": "AISafety.com",
-      "experience": "High",
-      "status": "Check source"
-    },
-    {
-      "id": "training-rec49VTc9xWkCdxwB",
-      "title": "Iliad Fellowship: January 2027",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Bay Area, USA & London, UK",
-      "deadline": "2026-11-16",
-      "startDate": "2027-01-04",
-      "availableFrom": null,
-      "detail": "Individual, mentored research in applied mathematics for alignment, with each fellow paired with an established research mentor. For PhD students, postdocs, and researchers with equivalent experience.",
-      "url": "https://www.iliad.ac/calendar",
       "source": "AISafety.com",
       "experience": "High",
       "status": "Check source"
@@ -9044,36 +8984,6 @@
       "availableFrom": null,
       "detail": "Residency focused on human agency in accelerating times. Includes working weeks and gatherings, covering topics ranging from education and AI to conceptual AI alignment.",
       "url": "https://fall.hostacov.com/",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
-      "id": "events-recd2rXvQExrQ1rYQ",
-      "title": "YC Debates: Should Governments Intervene to Slow Down AI Development?",
-      "organisation": "Y Combinator",
-      "category": "Events",
-      "location": "San Francisco, USA",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-16",
-      "availableFrom": null,
-      "detail": "Jacob Coxon, who left pretraining research at OpenAI and Anthropic to warn about the race to superintelligence, argues in favor. Economist Robin Hanson, who wrote that regulations to pause AI look risky, argues against.",
-      "url": "https://events.ycombinator.com/yc-debates-governments-pace-the-frontier",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
-      "id": "events-recv2PTD1bSu4g8t6",
-      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-      "organisation": "AI Safety Montréal",
-      "category": "Events",
-      "location": "Montréal, Canada",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-16",
-      "availableFrom": null,
-      "detail": "Reading group on a paper measuring how often frontier coding agents claim work their own transcripts show they never did, presented by first author Nolan Smyth. Bilingual discussion in French and English.",
-      "url": "https://luma.com/l6ha5hvk",
       "source": "AISafety.com",
       "experience": "",
       "status": "Check source"
