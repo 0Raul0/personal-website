@@ -1,8 +1,53 @@
 {
-  "updatedAt": "2026-11-16T19:48:11.844Z",
+  "updatedAt": "2026-11-17T16:52:53.549Z",
   "source": "https://aisafety.com/api/v1/",
   "failures": [],
   "listings": [
+    {
+      "id": "jobs-recuLVA2GZTWqopSt",
+      "title": "Research Engineer, AI Monitoring",
+      "organisation": "Anthropic",
+      "category": "Jobs",
+      "location": "London, UK",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "* In this role, you'll design and deploy classifiers detecting unsafe agent actions while balancing recall, precision, cost, and latency.\n* Build datasets, labeling pipelines, and evaluations to measure and improve classifier performance.\n* Operate classifiers in critical research and production paths, owning accuracy, reliability, latency, and failure behaviour.\n* Partner with red teaming teams to stress-test classifiers and ",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5477416008",
+      "source": "AISafety.com",
+      "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
+      "status": "Check source"
+    },
+    {
+      "id": "jobs-recCFDKQuQH6Hy8LD",
+      "title": "AI Safety Lab Lead",
+      "organisation": "Canadian Government, National Research Council Canada",
+      "category": "Jobs",
+      "location": "Ottawa, Canada",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "* In this role, you'll establish and lead the NRC's new AI Safety Lab, funded by the Canadian AI Safety Institute.\n* Build and manage a multidisciplinary team of AI safety researchers and engineers.\n* Develop scalable infrastructure for evaluating, benchmarking and red-teaming AI models.\n* Design reproducible safety protocols and benchmarks for testing advanced AI systems.\n* Translate research findings into practical tools and",
+      "url": "https://recruitment-recrutement.nrc-cnrc.gc.ca/job/Ottawa-AI-Safety-Lab-Lead-ON/602762817/",
+      "source": "AISafety.com",
+      "experience": "Mid (5–9 years experience)",
+      "status": "Check source"
+    },
+    {
+      "id": "jobs-recpy0hmzj0RJI4MY",
+      "title": "Mentor, Supervised Program for Alignment Research (Spring 2027)",
+      "organisation": "Kairos",
+      "category": "Jobs",
+      "location": "Remote (Global)",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "* In this role, you'll mentor a team of vetted fellows through a three-month remote project on reducing risks from advanced AI.\n* Propose a research or non-research project in areas such as alignment, AI policy, biosecurity, communications or fieldbuilding.\n* Review applications and choose your fellows from a ranked shortlist.\n* Run weekly team meetings and regular one-to-ones to guide progress.\n* Support your team towards a f",
+      "url": "https://sparai.org/mentors/",
+      "source": "AISafety.com",
+      "experience": "Multiple experience levels",
+      "status": "Check source"
+    },
     {
       "id": "jobs-recIOjkLZF43wAcBf",
       "title": "Expression of Interest, Researcher",
@@ -1159,21 +1204,6 @@
       "status": "Check source"
     },
     {
-      "id": "jobs-recQXhx0FEoj6SueL",
-      "title": "Office Manager",
-      "organisation": "Center for AI Safety",
-      "category": "Jobs",
-      "location": "San Francisco Bay Area, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll manage day-to-day office operations for a growing team of 30–50 people, serving as the primary contact for operational matters.\n* Oversee office facilities, including building access, maintenance, security, and manage the meal and snack program end to end.\n* Coordinate with vendors for cleaning, supplies, maintenance, and IT services.\n* Prepare onboarding and offboarding logistics, set up company events,",
-      "url": "https://job-boards.greenhouse.io/centerforartificialintelligencesafetyinc/jobs/4478051009",
-      "source": "AISafety.com",
-      "experience": "Junior (1–4 years experience)",
-      "status": "Check source"
-    },
-    {
       "id": "jobs-recVMxxzTjy3IBZxs",
       "title": "Senior Research Scientist / Engineer, Deception",
       "organisation": "FAR AI",
@@ -2281,36 +2311,6 @@
       "url": "https://pauseai.uk/jobs",
       "source": "AISafety.com",
       "experience": "Mid (5–9 years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-recMvDGm6hNmAyXys",
-      "title": "Chief of Staff to the Director, Center on AI, Security, and Technology",
-      "organisation": "RAND Corporation",
-      "category": "Jobs",
-      "location": "San Francisco Bay Area, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll serve as Chief of Staff to CAST's Director, acting as thought partner to sharpen priorities and extend impact.\n* Shape CAST's strategy by advising on research priorities across AI security, policy, and biosecurity.\n* Manage the Director's schedule and priorities for highest-leverage work and special projects.\n* Prepare the Director for high-stakes meetings, briefings, and presentations with government an",
-      "url": "https://docs.google.com/document/d/1gpV36mewgBNIlaSgaKIN44wA7VN-mebFqk_gM_Ou240/edit?tab=t.qll6pcin5xwe#heading=h.dx76zrtyqdr5",
-      "source": "AISafety.com",
-      "experience": "Junior (1–4 years experience), Mid (5–9 years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-rec2UcFhPgpENXp1y",
-      "title": "Chief of Staff to Associate Director and Head of AI Policy, Center on AI, Security, and Technology",
-      "organisation": "RAND Corporation",
-      "category": "Jobs",
-      "location": "Washington, DC metro area, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll serve as Chief of Staff to the Associate Director, managing priorities and extending the center's strategic impact.\n* Coordinate across teams, track key deliverables, and manage internal and external engagements.\n* Write for diverse audiences from junior staff to cabinet officials, preparing leadership for high-stakes meetings.\n* Draft policy briefs, research memos, and reports on AI policy for technical",
-      "url": "https://docs.google.com/document/d/1gpV36mewgBNIlaSgaKIN44wA7VN-mebFqk_gM_Ou240/edit?tab=t.0#heading=h.dx76zrtyqdr5",
-      "source": "AISafety.com",
-      "experience": "Junior (1–4 years experience), Mid (5–9 years experience)",
       "status": "Check source"
     },
     {
@@ -4216,21 +4216,6 @@
       "url": "https://jobs.ashbyhq.com/aidigest/1eeba9e6-64e0-4095-bb92-ffaac3d053ec",
       "source": "AISafety.com",
       "experience": "Multiple experience levels",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-recbA80PutzOZuUq6",
-      "title": "Head of Biology",
-      "organisation": "Gray Swan",
-      "category": "Jobs",
-      "location": "Remote (USA)",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll work on AI security, uncovering hard problems at the frontier and turning insights into real-world solutions.\n* Conduct research and stress-testing to identify new failure modes and vulnerabilities in advanced AI systems.\n* Help enterprises deploy AI safely and at scale while maintaining innovation velocity.\n* Contribute to safety evaluations that directly inform how advanced AI models are developed and ",
-      "url": "https://www.grayswan.ai/careers?ashby_jid=f160a2ce-0f55-4843-a0f6-f27a8bc56a64",
-      "source": "AISafety.com",
-      "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
       "status": "Check source"
     },
     {
@@ -7834,21 +7819,6 @@
       "status": "Check source"
     },
     {
-      "id": "training-recXMfiFlyGEL5zl4",
-      "title": "CLR Fundamentals Program: Autumn 2026",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Online",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-20",
-      "availableFrom": null,
-      "detail": "Course by the Center on Long-Term Risk (CLR) on how transformative AI might be involved in creating large amounts of suffering (s-risks). Covers model personas, safe Pareto improvements, and multiagent AI safety.",
-      "url": "https://forum.effectivealtruism.org/posts/rmz7sNB4YALQTeQ4v/application-open-for-clr-fundamentals-program-autumn-2026",
-      "source": "AISafety.com",
-      "experience": "Low",
-      "status": "Check source"
-    },
-    {
       "id": "training-recvJz2F58gww1dc7",
       "title": "AI Safety Collective at Irvine (AISCI) Research Projects",
       "organisation": "",
@@ -7879,18 +7849,18 @@
       "status": "Check source"
     },
     {
-      "id": "training-recBSEeRdoLPHqoM9",
-      "title": "AGI Strategy",
+      "id": "training-recmRr8edQi9vN3YR",
+      "title": "Lens Academy: Compute Verification 2",
       "organisation": "",
       "category": "Fellowships & training",
-      "location": "Montréal, Canada",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-23",
+      "location": "Online",
+      "deadline": "2026-11-23",
+      "startDate": "2026-11-30",
       "availableFrom": null,
-      "detail": "Run by AI Safety Montréal (AISM) for anyone who wants to upskill in AI safety and get a clearer view of the field and their own place in it. Uses BlueDot Impact's AGI Strategy curriculum. Sessions in English or French.",
-      "url": "https://aisafetymontreal.org/programs/#agiStrategy",
+      "detail": "Examines how an AI slowdown agreement could be checked. Covers what cloud records, satellites, insiders, and inspections can establish, and how a determined actor could evade each. Builds on Compute Verification 1.",
+      "url": "https://lensacademy.org/courses/compute-verification-2",
       "source": "AISafety.com",
-      "experience": "Low",
+      "experience": "Mid",
       "status": "Check source"
     },
     {
@@ -7899,7 +7869,7 @@
       "organisation": "",
       "category": "Fellowships & training",
       "location": "İzmit, Turkey",
-      "deadline": null,
+      "deadline": "2026-11-25",
       "startDate": "2026-12-05",
       "availableFrom": null,
       "detail": "Program by Poedat introducing AI safety and governance in Turkish. Covers alignment, reward hacking, catastrophe scenarios, and control of advanced AI. Includes talks, paper discussions, and a career planning workshop.",
@@ -7969,21 +7939,6 @@
       "status": "Check source"
     },
     {
-      "id": "training-rec49VTc9xWkCdxwB",
-      "title": "Iliad Fellowship: January 2027",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Bay Area, USA & London, UK",
-      "deadline": "2026-11-16",
-      "startDate": "2027-01-04",
-      "availableFrom": null,
-      "detail": "Individual, mentored research in applied mathematics for alignment, with each fellow paired with an established research mentor. For PhD students, postdocs, and researchers with equivalent experience.",
-      "url": "https://www.iliad.ac/calendar",
-      "source": "AISafety.com",
-      "experience": "High",
-      "status": "Check source"
-    },
-    {
       "id": "training-rec5Nm1iL4lUnEytz",
       "title": "AFFINE Superintelligence Alignment Seminar: Winter 2027",
       "organisation": "",
@@ -7996,6 +7951,21 @@
       "url": "https://www.affine.org/program/#seminar",
       "source": "AISafety.com",
       "experience": "Mid",
+      "status": "Check source"
+    },
+    {
+      "id": "training-reckWsALZPAMuVINC",
+      "title": "AI Safety Camp (AISC): 12th edition",
+      "organisation": "",
+      "category": "Fellowships & training",
+      "location": "Online",
+      "deadline": "2026-11-29",
+      "startDate": "2027-01-09",
+      "availableFrom": null,
+      "detail": "Small teams work on concrete AI safety projects, each guided by a project lead who brings the idea and plan. Approaches include technical, governance, advocacy, and theoretical foundations work.",
+      "url": "https://www.aisafety.camp/",
+      "source": "AISafety.com",
+      "experience": "Low",
       "status": "Check source"
     },
     {
@@ -9049,36 +9019,6 @@
       "status": "Check source"
     },
     {
-      "id": "events-recd2rXvQExrQ1rYQ",
-      "title": "YC Debates: Should Governments Intervene to Slow Down AI Development?",
-      "organisation": "Y Combinator",
-      "category": "Events",
-      "location": "San Francisco, USA",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-16",
-      "availableFrom": null,
-      "detail": "Jacob Coxon, who left pretraining research at OpenAI and Anthropic to warn about the race to superintelligence, argues in favor. Economist Robin Hanson, who wrote that regulations to pause AI look risky, argues against.",
-      "url": "https://events.ycombinator.com/yc-debates-governments-pace-the-frontier",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
-      "id": "events-recv2PTD1bSu4g8t6",
-      "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-      "organisation": "AI Safety Montréal",
-      "category": "Events",
-      "location": "Montréal, Canada",
-      "deadline": "2026-11-16",
-      "startDate": "2026-11-16",
-      "availableFrom": null,
-      "detail": "Reading group on a paper measuring how often frontier coding agents claim work their own transcripts show they never did, presented by first author Nolan Smyth. Bilingual discussion in French and English.",
-      "url": "https://luma.com/l6ha5hvk",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
       "id": "events-rec8ndnpZKwEHM4Zg",
       "title": "Building an organization and how Africans can contribute to AI safety",
       "organisation": "Effective Altruism South Africa",
@@ -9344,6 +9284,21 @@
       "availableFrom": null,
       "detail": "Effective Altruism conference bringing together 300+ people working in various EA cause areas, including AI safety. There will be talks, workshops, discussions, and networking opportunities.",
       "url": "https://www.effectivealtruism.org/ea-global/events/eagxaustralasia-2026",
+      "source": "AISafety.com",
+      "experience": "",
+      "status": "Check source"
+    },
+    {
+      "id": "events-reccsixlt3UC2xflY",
+      "title": "Cooperative AI Christmas Celebration!",
+      "organisation": "Cooperative AI Foundation (CAIF)",
+      "category": "Events",
+      "location": "London, UK",
+      "deadline": "2026-12-01",
+      "startDate": "2026-12-01",
+      "availableFrom": null,
+      "detail": "Gathers researchers in cooperative AI and related fields such as multi-agent systems and game theory. Includes a first look at the forthcoming Cooperative AI Research Agenda with Lewis Hammond, a Q&A, and networking.",
+      "url": "https://luma.com/8sysk6z6",
       "source": "AISafety.com",
       "experience": "",
       "status": "Check source"
