@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T16:07:56.413Z",
+  "updatedAt": "2026-11-21T15:20:37.033Z",
   "source": "https://aisafety.com/api/v1/",
   "failures": [],
   "listings": [
@@ -436,21 +436,6 @@
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5477416008",
       "source": "AISafety.com",
       "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-recCFDKQuQH6Hy8LD",
-      "title": "AI Safety Lab Lead",
-      "organisation": "Canadian Government, National Research Council Canada",
-      "category": "Jobs",
-      "location": "Ottawa, Canada",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll establish and lead the NRC's new AI Safety Lab, funded by the Canadian AI Safety Institute.\n* Build and manage a multidisciplinary team of AI safety researchers and engineers.\n* Develop scalable infrastructure for evaluating, benchmarking and red-teaming AI models.\n* Design reproducible safety protocols and benchmarks for testing advanced AI systems.\n* Translate research findings into practical tools and",
-      "url": "https://recruitment-recrutement.nrc-cnrc.gc.ca/job/Ottawa-AI-Safety-Lab-Lead-ON/602762817/",
-      "source": "AISafety.com",
-      "experience": "Mid (5–9 years experience)",
       "status": "Check source"
     },
     {
@@ -946,21 +931,6 @@
       "url": "https://ari.us/careers/?gh_jid=4487039009",
       "source": "AISafety.com",
       "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-rec3pESIXQR6naJ2E",
-      "title": "Associate Counsel, Responsible Artificial Intelligence Safety and Education",
-      "organisation": "New York State, Department of Financial Services",
-      "category": "Jobs",
-      "location": "New York, NY, USA; Albany, NY, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll handle legal issues in implementing New York's transparency and reporting rules for frontier AI developers under Article 44-B.\n* Review developer filings and engage with frontier model developers and other government authorities.\n* Provide legal analysis for proposed legislation, regulations, guidance, and annual reports.\n* Formulate legal and policy recommendations and brief senior officials, including ",
-      "url": "https://www.dfs.ny.gov/system/files/documents/2026/10/ass_counsel_ns_20261130_0.pdf",
-      "source": "AISafety.com",
-      "experience": "Junior (1–4 years experience), Mid (5–9 years experience)",
       "status": "Check source"
     },
     {
@@ -1474,21 +1444,6 @@
       "status": "Check source"
     },
     {
-      "id": "jobs-recV01NzOYMZNB5jO",
-      "title": "Research Scientist",
-      "organisation": "Principles of Intelligence",
-      "category": "Jobs",
-      "location": "Remote (Global); London, UK; San Francisco Bay Area, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll lead research projects at the intersection of physics and mechanistic interpretability to advance AI safety.\n* Develop tractable data models inspired by statistical physics that capture key aspects of natural data.\n* Quantify the relationship between data structure and learned features in AI systems.\n* Create synthetic datasets to benchmark and improve interpretability tools.\n* Own research projects end-",
-      "url": "https://princint.ai/research-scientists-at-principles-of-intelligence/",
-      "source": "AISafety.com",
-      "experience": "Junior (1–4 years experience), Mid (5–9 years experience)",
-      "status": "Check source"
-    },
-    {
       "id": "jobs-rectqdS5jXKNYR66S",
       "title": "Senior Media Manager",
       "organisation": "FAR AI",
@@ -1979,36 +1934,6 @@
       "availableFrom": null,
       "detail": "* In this role, you'll conduct security assessments on agentic AI services, identifying vulnerabilities like prompt injection and tool escalation.\n* Engineer and execute multi-turn attack sequences targeting model behaviors and logic errors.\n* Write code to automate vulnerability discoveries into regression testing frameworks.\n* Partner with developers during design phases to provide immediate security feedback.\n* Maintain and",
       "url": "https://www.google.com/about/careers/applications/jobs/results/126767008036332230-senior-security-engineer-agentic-red-team-deepmind?company=DeepMind&page=2",
-      "source": "AISafety.com",
-      "experience": "Mid (5–9 years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-rec56JN65enc8vUrS",
-      "title": "Lead Research Engineer, Bioresilience",
-      "organisation": "Google DeepMind",
-      "category": "Jobs",
-      "location": "London, UK",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll lead development and deployment of AI-powered bioresilience applications translating frontier breakthroughs into practical tools.\n* Partner with cross-functional teams to understand challenges and set program objectives.\n* Develop solutions using foundation models like Gemini and AlphaFold while curating datasets and designing evaluations.\n* Advocate safe GenAI deployment practices and demonstrate fronti",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/111033915765859014-lead-research-engineer-bioresilience-deepmind?company=DeepMind&page=4",
-      "source": "AISafety.com",
-      "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-rec9fbyf8C9GknLJd",
-      "title": "Research Engineer, Bioresilience",
-      "organisation": "Google DeepMind",
-      "category": "Jobs",
-      "location": "London, UK",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll build and deploy AI applications to advance bioresilience and protect communities from biological threats.\n* Partner with external authorities and cross-functional teams to understand biodefense challenges and define technical architectures.\n* Curate biological datasets, design domain evaluations, and fine-tune models.\n* Engineer end-to-end solutions using internal platforms and foundation models such as",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/121101044229776070-research-engineer-bioresilience-deepmind?company=DeepMind&page=4",
       "source": "AISafety.com",
       "experience": "Mid (5–9 years experience)",
       "status": "Check source"
@@ -3784,21 +3709,6 @@
       "status": "Check source"
     },
     {
-      "id": "jobs-rec09CaSkx78h5K5d",
-      "title": "Program Manager / Senior Program Manager, Mentor Selection",
-      "organisation": "MATS Research",
-      "category": "Jobs",
-      "location": "San Francisco Bay Area, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll own mentor selection end-to-end, from sourcing to allocating fellows across mentors and research agendas.\n* Headhunt prospective mentors and conduct outreach, leveraging your AI safety network and research landscape knowledge.\n* Gather evaluations from the selection committee, advisors, and past cohort data to assess returning mentors.\n* Propose fellow allocations across mentors and research agendas, bal",
-      "url": "https://www.matsprogram.org/careers/program-mgr-selection",
-      "source": "AISafety.com",
-      "experience": "Mid (5–9 years experience)",
-      "status": "Check source"
-    },
-    {
       "id": "jobs-rec8nRW5pcXysjU0Y",
       "title": "Data Centre Security Architect",
       "organisation": "Lucid Computing",
@@ -3811,6 +3721,21 @@
       "url": "https://jobs.ashbyhq.com/lucidcomputing/ea0aff04-aa5d-4f5a-8dff-32eef7f09a98",
       "source": "AISafety.com",
       "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
+      "status": "Check source"
+    },
+    {
+      "id": "jobs-rec09CaSkx78h5K5d",
+      "title": "Program Manager / Senior Program Manager, Mentor Selection",
+      "organisation": "MATS Research",
+      "category": "Jobs",
+      "location": "San Francisco Bay Area, USA",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "* In this role, you'll own mentor selection end-to-end, from sourcing to allocating fellows across mentors and research agendas.\n* Headhunt prospective mentors and conduct outreach, leveraging your AI safety network and research landscape knowledge.\n* Gather evaluations from the selection committee, advisors, and past cohort data to assess returning mentors.\n* Propose fellow allocations across mentors and research agendas, bal",
+      "url": "https://ats.rippling.com/en-US/mats-research/jobs/b8ad8c08-86db-48f5-90da-790b8f67d25c",
+      "source": "AISafety.com",
+      "experience": "Mid (5–9 years experience)",
       "status": "Check source"
     },
     {
@@ -3841,21 +3766,6 @@
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5412944008",
       "source": "AISafety.com",
       "experience": "Mid (5–9 years experience)",
-      "status": "Check source"
-    },
-    {
-      "id": "jobs-rec2ACSt8SRtxqPso",
-      "title": "Head of Cyber Safety",
-      "organisation": "Gray Swan",
-      "category": "Jobs",
-      "location": "Remote (USA)",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "* In this role, you'll build and lead cyber safety capability as technical authority on AI-enabled cyber risk.\n* Design adversarial evaluations of frontier LLMs for offensive cyber capabilities including vulnerability discovery and exploits.\n* Partner with ML engineers to translate cybersecurity expertise into scalable benchmarks and detection systems.\n* Develop and maintain cyber harm taxonomies while evolving evaluation fram",
-      "url": "https://www.grayswan.ai/careers?ashby_jid=d564e180-807e-4da1-9955-1bfdcdab1e38",
-      "source": "AISafety.com",
-      "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
       "status": "Check source"
     },
     {
@@ -6004,6 +5914,36 @@
       "status": "Check source"
     },
     {
+      "id": "jobs-rece1mpV9mApU5BSu",
+      "title": "Research Engineer",
+      "organisation": "Neo Research",
+      "category": "Jobs",
+      "location": "Remote (Singapore)",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "* In this role, you'll implement and run safety evaluations on frontier AI models, focusing on loss-of-control and harmful manipulation risks.\n* Build and maintain agent scaffolds, tool integrations, and evaluation infrastructure.\n* Own reproducibility across sampling, logging, environment management, and result analysis.\n* Translate research questions from scientists into runnable, rigorous evaluations.\n* Contribute methodolo",
+      "url": "https://neoresearch.ai/careers/research-engineer/?ashby_jid=18a36bf2-002c-414a-82d5-a029cca61928",
+      "source": "AISafety.com",
+      "experience": "Junior (1–4 years experience)",
+      "status": "Check source"
+    },
+    {
+      "id": "jobs-recU8i0K3FLNblfH4",
+      "title": "Research Scientist",
+      "organisation": "Neo Research",
+      "category": "Jobs",
+      "location": "Remote (Singapore)",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "* In this role, you'll lead research on loss-of-control and harmful manipulation risks in frontier AI models.\n* Design novel evaluation methodologies addressing evaluation awareness, sandbagging, and deception.\n* Author safety reports and research publications to advance the field.\n* Set research direction and priorities in collaboration with the team.\n* Engage with the safety community including AI safety institutes and front",
+      "url": "https://neoresearch.ai/careers/research-scientist/?ashby_jid=43b25a52-db0a-4d6e-80ad-c19f261ed3ee",
+      "source": "AISafety.com",
+      "experience": "Junior (1–4 years experience)",
+      "status": "Check source"
+    },
+    {
       "id": "jobs-recVlGCm5LBCGdgIW",
       "title": "Field Specialist, AI Hardware Security and Verification",
       "organisation": "Amodo Design",
@@ -7036,6 +6976,21 @@
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5022845008",
       "source": "AISafety.com",
       "experience": "Mid (5–9 years experience), Senior (10+ years experience)",
+      "status": "Check source"
+    },
+    {
+      "id": "jobs-recmtq6IBa7jNug2o",
+      "title": "Software Engineer, Benchmarking",
+      "organisation": "Epoch AI",
+      "category": "Jobs",
+      "location": "Remote (Global)",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "* In this role, you'll help evaluate frontier AI models by developing and maintaining benchmarking infrastructure.\n* Implement AI benchmarks within evaluation infrastructure to expand tracked capabilities.\n* Develop existing benchmarks to quickly evaluate new model releases.\n* Contribute to brand new benchmarks by pitching and prototyping your own ideas.\n* Collaborate with researchers and analysts to ensure accurate and insigh",
+      "url": "https://jobs.lever.co/epoch-ai/bd6856b7-c6bb-4793-acfa-9870671959ee",
+      "source": "AISafety.com",
+      "experience": "Junior (1–4 years experience), Mid (5–9 years experience)",
       "status": "Check source"
     },
     {
@@ -8149,21 +8104,6 @@
       "status": "Check source"
     },
     {
-      "id": "training-recbJHVaz3vyoyJic",
-      "title": "AI Safety for Italy Mentorship Program: Winter 2026/27",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Online",
-      "deadline": "2026-11-20",
-      "startDate": "2026-12-15",
-      "availableFrom": null,
-      "detail": "Connects people with ties to Italy entering AI safety and governance with mentors in the field. Includes a career orientation track and a projects track on model interpretability and evaluation, governance and policy.",
-      "url": "https://www.ais4i.it/mentorship/",
-      "source": "AISafety.com",
-      "experience": "Low",
-      "status": "Check source"
-    },
-    {
       "id": "training-recRWVgfkDRYnVByM",
       "title": "Anthropic Residency",
       "organisation": "",
@@ -9274,36 +9214,6 @@
       "status": "Check source"
     },
     {
-      "id": "events-recMNEv6MC7D6GmUP",
-      "title": "Mechanistic Interpretability Hackathon 5: Autointerp",
-      "organisation": "Mech Interp Discord",
-      "category": "Events",
-      "location": "Online",
-      "deadline": "2026-11-20",
-      "startDate": "2026-11-20",
-      "availableFrom": null,
-      "detail": "Individuals or teams work on a research project reverse-engineering neural networks. The suggested theme is autointerp evals – automatically scoring explanations by how well they predict neuron activations.",
-      "url": "https://itch.io/jam/mechanistic-interpretability-hackathon-5",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
-      "id": "events-recXNVsitSoLHzlWo",
-      "title": "Science Fiction as Scenario Planning: The Gentle Romance by Richard Ngo",
-      "organisation": "Institute for the AI Century",
-      "category": "Events",
-      "location": "Online",
-      "deadline": "2026-11-20",
-      "startDate": "2026-11-20",
-      "availableFrom": null,
-      "detail": "Book club discussion comparing stories from the collection, including one in which two people choose to share a mind. Asks how choices about autonomy and control might scale into lasting losses of human agency.",
-      "url": "https://luma.com/cyu3ja9w",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
       "id": "events-recPpB6n83d9IMhyD",
       "title": "The Commons Problem – Playtest 3",
       "organisation": "Automaton Games",
@@ -9659,21 +9569,6 @@
       "availableFrom": null,
       "detail": "Annual conference connecting experts from academia, policy groups, civil society, industry, and beyond. Focused on ensuring AI systems operate safely and ethically, through research, policy, and public understanding.",
       "url": "https://www.iaseai.org/our-programs/iaseai27",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
-      "id": "events-recNcWGRl5KA7q3Sv",
-      "title": "IntelliSym2027: Intelligence Symbiosis Workshop at AAAI-27",
-      "organisation": "AI Alignment Network (ALIGN)",
-      "category": "Events",
-      "location": "Montréal, Canada",
-      "deadline": "2026-11-20",
-      "startDate": "2027-02-22",
-      "availableFrom": null,
-      "detail": "One-day event examining how norms and trust infrastructure can emerge, be verified, and be maintained among collectives of AI agents and humans. Includes invited talks, paper sessions, a poster session, and a closing panel.",
-      "url": "https://intelligence-symbiosis.net/en/events/aaai-2027-workshop",
       "source": "AISafety.com",
       "experience": "",
       "status": "Check source"
