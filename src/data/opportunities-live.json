@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T15:20:37.033Z",
+  "updatedAt": "2026-11-22T15:15:51.296Z",
   "source": "https://aisafety.com/api/v1/",
   "failures": [],
   "listings": [
@@ -8014,21 +8014,6 @@
       "status": "Check source"
     },
     {
-      "id": "training-recieVuRm7X8N4HqJ",
-      "title": "AI Safety Technical Fundamentals",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Montréal, Canada",
-      "deadline": null,
-      "startDate": "2026-11-21",
-      "availableFrom": null,
-      "detail": "Guided study of the ARENA materials, run by AI Safety Montréal (AISM). Covers deep learning fundamentals, transformers and mechanistic interpretability, reinforcement learning, and model evaluations.",
-      "url": "https://aisafetymontreal.org/technical-fundamentals/",
-      "source": "AISafety.com",
-      "experience": "Low",
-      "status": "Check source"
-    },
-    {
       "id": "training-recmRr8edQi9vN3YR",
       "title": "Lens Academy: Compute Verification 2",
       "organisation": "",
@@ -8134,6 +8119,21 @@
       "status": "Check source"
     },
     {
+      "id": "training-recqQfVZjY4wFeCSl",
+      "title": "AI, Power and Cooperation: A Winter Residency at Hostačov",
+      "organisation": "",
+      "category": "Fellowships & training",
+      "location": "Hostačov, Czech Republic",
+      "deadline": "2026-12-13",
+      "startDate": "2027-01-04",
+      "availableFrom": null,
+      "detail": "For people working on how AI is changing power, policy, and society. Residents mix their own research or writing with talks and shared projects on themes from AI power concentration to forecasting for policy.",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfS3pqan0ppbe-OS3OY4PzyRKkv5rxv6_xX_QS7C3xDAJ-Mvw/viewform",
+      "source": "AISafety.com",
+      "experience": "Low",
+      "status": "Check source"
+    },
+    {
       "id": "training-reckWsALZPAMuVINC",
       "title": "AI Safety Camp (AISC): 12th edition",
       "organisation": "",
@@ -8179,6 +8179,21 @@
       "status": "Check source"
     },
     {
+      "id": "training-recfvy9LmjdxPWYGn",
+      "title": "Constellation Visiting Fellows: Spring 2027 Cohort",
+      "organisation": "",
+      "category": "Fellowships & training",
+      "location": "Berkeley, USA",
+      "deadline": "2026-11-29",
+      "startDate": "2027-02-01",
+      "availableFrom": null,
+      "detail": "For AI safety researchers to continue their own work while meeting other researchers and finding collaborators. Priority areas include pacing and making recursive self-improvement go well given lots of AI labor.",
+      "url": "https://constellation.org/programs/visiting-fellowship",
+      "source": "AISafety.com",
+      "experience": "High",
+      "status": "Check source"
+    },
+    {
       "id": "training-reckjoC9BgXtFz1I9",
       "title": "AI Evaluation Programme: 2027",
       "organisation": "",
@@ -8219,6 +8234,21 @@
       "availableFrom": null,
       "detail": "Program by Talos Network for recent graduates and early-career professionals who want to work in European AI governance. Includes a weekly seminar, 1-1s, a published policy piece, a summit, and an optional placement.",
       "url": "https://www.talosnetwork.org/talos-fellowship",
+      "source": "AISafety.com",
+      "experience": "Mid",
+      "status": "Check source"
+    },
+    {
+      "id": "training-recm62O0Tamlc7gpl",
+      "title": "ARENA 10.0",
+      "organisation": "",
+      "category": "Fellowships & training",
+      "location": "London, UK",
+      "deadline": "2026-12-06",
+      "startDate": "2027-03-01",
+      "availableFrom": null,
+      "detail": "Alignment Research Engineer Accelerator (ARENA) teaches ML engineering for technical AI safety roles. Covers transformers and interpretability, reinforcement learning, and model evals – ending with a capstone project.",
+      "url": "https://www.arena.education/",
       "source": "AISafety.com",
       "experience": "Mid",
       "status": "Check source"
@@ -8629,21 +8659,6 @@
       "status": "Check source"
     },
     {
-      "id": "training-recEE7W7lvNUkyPVB",
-      "title": "Constellation Visiting Fellows",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "Berkeley, USA",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "Lightly structured program for people working full-time on AI safety to continue their work from Constellation's research center in Berkeley. During that time fellows connect with leading researchers and find collaborators.",
-      "url": "https://constellation.org/programs/visiting-fellowship",
-      "source": "AISafety.com",
-      "experience": "High",
-      "status": "Check source"
-    },
-    {
       "id": "training-recxJjGgPujKFbxdO",
       "title": "GovAI Fellowship",
       "organisation": "",
@@ -8656,21 +8671,6 @@
       "url": "https://www.governance.ai/opportunities",
       "source": "AISafety.com",
       "experience": "High",
-      "status": "Check source"
-    },
-    {
-      "id": "training-recqUhj6LaubXR3vo",
-      "title": "ARENA (Alignment Research Engineer Accelerator)",
-      "organisation": "",
-      "category": "Fellowships & training",
-      "location": "London, UK",
-      "deadline": null,
-      "startDate": null,
-      "availableFrom": null,
-      "detail": "Trains aspiring alignment researchers and engineers in ML through an intensive curriculum. Participants work through programming exercises in pairs under the guidance of expert teaching assistants.",
-      "url": "https://www.arena.education/",
-      "source": "AISafety.com",
-      "experience": "Mid",
       "status": "Check source"
     },
     {
@@ -8743,7 +8743,7 @@
       "startDate": null,
       "availableFrom": null,
       "detail": "Research program focused on reducing the risk of loss of control to advanced AI, tackling action-relevant questions on concrete threat models. Participants work in teams of 3–4 with an experienced supervisor to write an academic-style paper.",
-      "url": "https://www.lasrlabs.org/",
+      "url": "https://www.arcadiaimpact.org/lasr",
       "source": "AISafety.com",
       "experience": "Mid",
       "status": "Check source"
@@ -9214,36 +9214,6 @@
       "status": "Check source"
     },
     {
-      "id": "events-recPpB6n83d9IMhyD",
-      "title": "The Commons Problem – Playtest 3",
-      "organisation": "Automaton Games",
-      "category": "Events",
-      "location": "San Francisco, USA",
-      "deadline": "2026-11-21",
-      "startDate": "2026-11-21",
-      "availableFrom": null,
-      "detail": "Megagame in which players act as great powers, AI companies, chip makers, and investors to wargame the near future of the AI ecosystem. Simulates research, supply chains, investment, policy, diplomacy, and warfare.",
-      "url": "https://luma.com/b9n3leog",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
-      "id": "events-recty3t7Sh2cpERvU",
-      "title": "March Against AI Extinction",
-      "organisation": "PauseAI",
-      "category": "Events",
-      "location": "London, UK",
-      "deadline": "2026-11-21",
-      "startDate": "2026-11-21",
-      "availableFrom": null,
-      "detail": "Protest calling on the UK Prime Minister to introduce frontier AI legislation to prevent catastrophe. Argues that no regulator oversees frontier AI development and developers are not reliably held liable for harm.",
-      "url": "https://pauseai.uk/demonstrations/march-against-ai-extinction-nov-26",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
       "id": "events-rec8SmUlwH7r47kps",
       "title": "The Future of AI",
       "organisation": "AI Safety Türkiye",
@@ -9269,6 +9239,21 @@
       "availableFrom": null,
       "detail": "Katrina Matheson, a PhD candidate at York University, explores how countries reached agreements on nuclear safety, which lessons might apply to AI today, and where the analogy breaks down. Followed by a Q&A.",
       "url": "https://luma.com/cs8nilel",
+      "source": "AISafety.com",
+      "experience": "",
+      "status": "Check source"
+    },
+    {
+      "id": "events-recTX3h4QPaxlnpxh",
+      "title": "What is next for the US-China AI safety dialogue?",
+      "organisation": "Brookings Institution",
+      "category": "Events",
+      "location": "Online",
+      "deadline": "2026-11-23",
+      "startDate": "2026-11-23",
+      "availableFrom": null,
+      "detail": "Kyle Chan, Kendra Schaefer, and Selina Xu discuss how China and the United States are moving forward with a formal bilateral AI dialogue. Covers an emergency channel for critical AI incidents such as rogue agents.",
+      "url": "https://www.brookings.edu/events/what-is-next-for-the-us-china-ai-safety-dialogue/",
       "source": "AISafety.com",
       "experience": "",
       "status": "Check source"
@@ -9364,6 +9349,21 @@
       "status": "Check source"
     },
     {
+      "id": "events-recYuZEZoXdNuwJHJ",
+      "title": "Gen Stream Demo Day and Reception",
+      "organisation": "Gen Stream",
+      "category": "Events",
+      "location": "Oxford, UK",
+      "deadline": "2026-11-27",
+      "startDate": "2026-11-27",
+      "availableFrom": null,
+      "detail": "Demo day where 15 professionals moving into generalist AI safety roles each pitch a project set by an AI safety organization. For people working in the field, especially those who hire, contract, or fund generalists.",
+      "url": "https://luma.com/kqxqxvkd",
+      "source": "AISafety.com",
+      "experience": "",
+      "status": "Check source"
+    },
+    {
       "id": "events-reccsixlt3UC2xflY",
       "title": "Cooperative AI Christmas Celebration!",
       "organisation": "Cooperative AI Foundation (CAIF)",
@@ -9424,6 +9424,21 @@
       "status": "Check source"
     },
     {
+      "id": "events-recRYhyT6y8AHsy02",
+      "title": "Safe-by-Design Superintelligence",
+      "organisation": "Institute for Responsible Superintelligence (RESI)",
+      "category": "Events",
+      "location": "Cambridge, USA",
+      "deadline": "2026-12-04",
+      "startDate": "2026-12-04",
+      "availableFrom": null,
+      "detail": "Brings together researchers from AI companies, safety organizations, and academia to develop scientific foundations for safer advanced AI. Includes panels on cryptography in the age of AI and on academia and AI safety.",
+      "url": "https://resi.org/workshops/safe-by-design-superintelligence/",
+      "source": "AISafety.com",
+      "experience": "",
+      "status": "Check source"
+    },
+    {
       "id": "events-recUd98IpZvgF4jU0",
       "title": "AI Safety Career Fair & Founders Summit 2.0",
       "organisation": "AI Safety San Francisco",
@@ -9434,6 +9449,21 @@
       "availableFrom": null,
       "detail": "For people ready to move into AI safety roles, founding, or building. Includes talks and workshops on funding and research gaps, a career fair, funder office hours, an unconference, and cofounder matching.",
       "url": "https://aisafetysf.org/summit",
+      "source": "AISafety.com",
+      "experience": "",
+      "status": "Check source"
+    },
+    {
+      "id": "events-rececKJGSMlQ1nYtZ",
+      "title": "The Trouble With the Nuclear–AI Analogy",
+      "organisation": "Institute for the AI Century",
+      "category": "Events",
+      "location": "Online",
+      "deadline": "2026-12-04",
+      "startDate": "2026-12-04",
+      "availableFrom": null,
+      "detail": "Christopher David LaRoche discusses what the nuclear age can teach about governing advanced AI. Covers which lessons about verification and deterrence carry over and where the comparison breaks down – followed by a Q&A.",
+      "url": "https://www.aicentury.ai/events/nuclear-ai-analogy/",
       "source": "AISafety.com",
       "experience": "",
       "status": "Check source"
@@ -9509,21 +9539,6 @@
       "availableFrom": null,
       "detail": "Brings together people working to ensure transformative AI leads to good futures, and people well-positioned to move into high-priority roles in the space. Includes talks, 1-1s, and structured networking.",
       "url": "https://www.aihorizonsforum.org/",
-      "source": "AISafety.com",
-      "experience": "",
-      "status": "Check source"
-    },
-    {
-      "id": "events-recrsh0zPznUuxFEc",
-      "title": "EA Summit: Boston 2026",
-      "organisation": "Centre for Effective Altruism (CEA)",
-      "category": "Events",
-      "location": "Boston, USA",
-      "deadline": "2026-11-21",
-      "startDate": "2026-12-12",
-      "availableFrom": null,
-      "detail": "Gathers experienced professionals using evidence and reason to decide where their skills can do the most good – including in AI safety. Includes talks, skill-building workshops, and meetups.",
-      "url": "https://www.effectivealtruism.org/ea-global/events/ea-summit-boston-2026",
       "source": "AISafety.com",
       "experience": "",
       "status": "Check source"
@@ -9689,6 +9704,21 @@
       "availableFrom": null,
       "detail": "Guide to readings which seem valuable for thinking about key future dynamics in advanced AI development – timelines, takeoff, misalignment, control, governance, and strategy.",
       "url": "https://blog.redwoodresearch.org/p/ai-futurism-reading-list",
+      "source": "AISafety.com",
+      "experience": "",
+      "status": "Check source"
+    },
+    {
+      "id": "courses-recAJXPGBOFUoP0W1",
+      "title": "Direct Institutional Plan Training",
+      "organisation": "Torchbearer Community, ControlAI",
+      "category": "Courses",
+      "location": "",
+      "deadline": null,
+      "startDate": null,
+      "availableFrom": null,
+      "detail": "Course on briefing lawmakers about AI extinction risk – securing meetings, delivering briefings, and handling common objections. Includes practice with experienced advocates.",
+      "url": "https://dip.torchbearer.community/",
       "source": "AISafety.com",
       "experience": "",
       "status": "Check source"
